@@ -1,0 +1,178 @@
+{
+    "meta": {
+        "lookbackHours": 24,
+        "maxItemsPerSource": 5,
+        "maxTotalItemsPerCategory": 15,
+        "priorityCategories": [
+            "claude_code",
+            "us_ai_labs",
+            "japan_ai"
+        ]
+    },
+    "categories": {
+        "claude_code": {
+            "label": "🤖 Claude Code 新聞",
+            "priority": "high",
+            "summaryDepth": "detailed",
+            "sources": [
+                {
+                    "name": "Zenn - Claude Code",
+                    "url": "https://zenn.dev/topics/claudecode/feed",
+                    "lang": "ja"
+                }
+            ]
+        },
+        "us_ai_labs": {
+            "label": "🇺🇸 美國 AI 大廠",
+            "priority": "high",
+            "summaryDepth": "standard",
+            "sources": [
+                {
+                    "name": "OpenAI Blog",
+                    "url": "https://openai.com/blog/rss.xml",
+                    "lang": "en"
+                },
+                {
+                    "name": "Google DeepMind Blog",
+                    "url": "https://deepmind.com/blog/feed/basic/",
+                    "lang": "en"
+                },
+                {
+                    "name": "Hugging Face Blog",
+                    "url": "https://huggingface.co/blog/feed.xml",
+                    "lang": "en"
+                },
+                {
+                    "name": "Hugging Face Daily Papers",
+                    "url": "https://rsshub.app/huggingface/daily-papers",
+                    "lang": "en"
+                },
+                {
+                    "name": "Google Research Blog",
+                    "url": "https://feeds.feedburner.com/blogspot/gJZg",
+                    "lang": "en"
+                }
+            ]
+        },
+        "japan_ai": {
+            "label": "🧠 日本 AI / ML 研究",
+            "priority": "medium",
+            "summaryDepth": "standard",
+            "sources": [
+                {
+                    "name": "Ledge.ai",
+                    "url": "https://ledge.ai/feed",
+                    "lang": "ja"
+                },
+                {
+                    "name": "ITmedia AI+",
+                    "url": "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml",
+                    "lang": "ja"
+                },
+                {
+                    "name": "AI Shift Tech Blog",
+                    "url": "https://www.ai-shift.co.jp/techblog/feed",
+                    "lang": "ja"
+                }
+            ]
+        },
+        "japan_dev_community": {
+            "label": "👨‍💻 日本工程社群（Zenn / Qiita）",
+            "priority": "medium",
+            "summaryDepth": "standard",
+            "sources": [
+                {
+                    "name": "Zenn - AI",
+                    "url": "https://zenn.dev/topics/ai/feed",
+                    "lang": "ja"
+                },
+                {
+                    "name": "Zenn - 機械学習",
+                    "url": "https://zenn.dev/topics/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/feed",
+                    "lang": "ja"
+                },
+                {
+                    "name": "Qiita - LLM",
+                    "url": "https://qiita.com/tags/llm/feed",
+                    "lang": "ja"
+                },
+                {
+                    "name": "Qiita - 機械学習",
+                    "url": "https://qiita.com/tags/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/feed",
+                    "lang": "ja"
+                }
+            ]
+        },
+        "japan_tech": {
+            "label": "🖥️ 日本科技業",
+            "priority": "medium",
+            "summaryDepth": "standard",
+            "sources": [
+                {
+                    "name": "ITmedia NEWS",
+                    "url": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+                    "lang": "ja"
+                },
+                {
+                    "name": "ITmedia ビジネス",
+                    "url": "https://rss.itmedia.co.jp/rss/2.0/business.xml",
+                    "lang": "ja"
+                },
+                {
+                    "name": "Engadget",
+                    "url": "https://www.engadget.com/rss.xml",
+                    "lang": "en"
+                },
+                {
+                    "name": "TechCrunch",
+                    "url": "https://techcrunch.com/feed/",
+                    "lang": "en"
+                }
+            ]
+        },
+        "japan_general": {
+            "label": "📰 日本綜合",
+            "priority": "low",
+            "summaryDepth": "brief",
+            "sources": [
+                {
+                    "name": "NHK 主要ニュース",
+                    "url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+                    "lang": "ja"
+                },
+                {
+                    "name": "朝日新聞 デジタル",
+                    "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+                    "lang": "ja"
+                },
+                {
+                    "name": "Nikkei Asia",
+                    "url": "https://asia.nikkei.com/rss/feed/nar",
+                    "lang": "en"
+                }
+            ]
+        },
+        "japan_crypto": {
+            "label": "₿ 日本 Crypto",
+            "priority": "low",
+            "summaryDepth": "standard",
+            "sources": [
+                {
+                    "name": "CoinPost",
+                    "url": "https://coinpost.jp/rss.xml",
+                    "lang": "ja"
+                },
+                {
+                    "name": "あたらしい経済",
+                    "url": "https://www.neweconomy.jp/feed",
+                    "lang": "ja"
+                },
+                {
+                    "name": "CoinDesk Japan",
+                    "url": "https://www.coindeskjapan.com/feed/",
+                    "lang": "ja"
+                }
+            ]
+        }
+    }
+}

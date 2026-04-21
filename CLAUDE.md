@@ -2,7 +2,7 @@
 # Agent Daily Routines
 
 此 repo 託管多個獨立 Cloud Routines，每個子目錄是一個自動化任務。
-所有 routines 共用以下規範。
+所有 routines 仍用Sonnet, 並共用以下規範。
 
 ## 架構約定
 

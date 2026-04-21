@@ -1,0 +1,13 @@
+// .gitignore (repo root)
+node_modules/
+.env
+.env.*
+!.env.example
+
+# macOS / Windows noise
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

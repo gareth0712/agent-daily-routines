@@ -1,0 +1,14 @@
+{"ts":"2026-04-22T09:09:16+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-04-22","timestamp":"20260422-090916"}}
+{"ts":"2026-04-22T09:09:20+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":3,"status":200}}
+{"ts":"2026-04-22T09:10:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":5,"status":200}}
+{"ts":"2026-04-22T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":0}}
+{"ts":"2026-04-22T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":3}}
+{"ts":"2026-04-22T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":0}}
+{"ts":"2026-04-22T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":0}}
+{"ts":"2026-04-22T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":5}}
+{"ts":"2026-04-22T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":0}}
+{"ts":"2026-04-22T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":0}}
+{"ts":"2026-04-22T09:11:45+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260422-090916.md","items_total":8}}
+{"ts":"2026-04-22T09:12:00+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"29a0dbf"}}
+{"ts":"2026-04-22T09:12:30+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"sent","subject_date":"2026-04-22"}}
+{"ts":"2026-04-22T09:12:45+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":209,"status":"partial_success","items_total":8,"errors_count":27}}

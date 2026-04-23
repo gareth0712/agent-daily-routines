@@ -36,11 +36,9 @@
 ### daily-digest
 - `output/YYYYMMDD-HHMMSS.md` 已產生
 - 兩個 commit 已建立（output + logs）
-- `git push` 成功
-- PR 已建立並 merge 至 `main`
+- `git push` 成功（PR 由 Routine 平台自動建立）
 
 ### broadcast-digest
 - Gmail 已寄出（或已記錄 email 失敗）
 - broadcast log commit 已建立
-- `git push` 成功
-- PR 已建立並 merge 至 `main`
+- `git push` 成功（PR 由 Routine 平台自動建立）

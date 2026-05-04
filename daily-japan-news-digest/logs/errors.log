@@ -1,0 +1,5 @@
+{"ts":"2026-05-04T09:37:22+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-05-04T09:37:25+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","url":"https://feeds.feedburner.com/blogspot/gJZg","error":"HTTP 404 Not Found"}}
+{"ts":"2026-05-04T09:38:00+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Domain access denied: www.nhk.or.jp"}}
+{"ts":"2026-05-04T09:38:02+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Domain access denied: www.asahi.com"}}
+{"ts":"2026-05-04T09:48:00+09:00","level":"WARN","action":"send_email","detail":{"error":"Gmail connector supports draft creation only; draft created with id r-7659927180145116211, requires manual send","subject_date":"2026-05-04"}}

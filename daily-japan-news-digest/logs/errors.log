@@ -1,0 +1,8 @@
+{"ts":"2026-05-06T09:08:34+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"403 Forbidden"}}
+{"ts":"2026-05-06T09:08:34+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"404 Not Found"}}
+{"ts":"2026-05-06T09:08:34+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Connection blocked"}}
+{"ts":"2026-05-06T09:08:34+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Connection blocked"}}
+{"ts":"2026-05-06T09:08:34+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"Feed contains only 2024 data, no items within 24h"}}
+{"ts":"2026-05-06T09:08:34+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_crypto","source":"あたらしい経済","url":"https://www.neweconomy.jp/feed","error":"Last item May 2, 2026 - no items within 24h"}}
+{"ts":"2026-05-06T09:08:34+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan","url":"https://www.coindeskjapan.com/feed/","error":"301 redirect to nadanews.com - fetching redirect"}}
+{"ts":"2026-05-06T09:08:34+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","url":"https://feeds.feedburner.com/blogspot/gJZg","error":"Feed contains only March 2024 data, no items within 24h"}}

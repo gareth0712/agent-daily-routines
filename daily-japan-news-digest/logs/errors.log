@@ -1,0 +1,6 @@
+{"ts":"2026-05-10T09:07:56+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-05-10T09:07:58+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-05-10T09:08:02+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","url":"https://www.ai-shift.co.jp/techblog/feed","error":"Feed outdated: last item 2026-03-05, no recent content"}}
+{"ts":"2026-05-10T09:08:29+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan","url":"https://www.coindeskjapan.com/feed/","error":"301 redirect to unrelated host www.nadanews.com"}}
+{"ts":"2026-05-10T09:08:31+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Connection blocked by host"}}
+{"ts":"2026-05-10T09:08:33+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Connection blocked by host"}}

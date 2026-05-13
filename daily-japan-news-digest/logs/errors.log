@@ -1,0 +1,5 @@
+{"ts":"2026-05-13T09:10:12+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-05-13T09:10:12+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-05-13T09:10:33+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"fetch blocked"}}
+{"ts":"2026-05-13T09:10:34+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"fetch blocked"}}
+{"ts":"2026-05-13T09:10:35+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","error":"feed missing pubDate, cannot filter by time"}}

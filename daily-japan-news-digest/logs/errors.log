@@ -1,0 +1,5 @@
+{"ts":"2026-05-17T09:06:36+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-05-17T09:06:39+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-05-17T09:07:42+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Host blocked by fetch policy"}}
+{"ts":"2026-05-17T09:07:45+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Host blocked by fetch policy"}}
+{"ts":"2026-05-17T09:16:45+09:00","level":"WARN","action":"send_email","detail":{"error":"No direct send tool available, created Gmail draft instead. Draft ID: r-561617807306069092","subject_date":"2026-05-17"}}

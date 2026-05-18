@@ -1,0 +1,27 @@
+{"ts":"2026-05-18T09:02:00+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-05-18","timestamp":"20260518-090200"}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":3,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":0,"status":200,"note":"latest item 2026-05-16, outside 24h window"}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","items":0,"status":200,"note":"redirect followed; latest item 2026-05-06, outside 24h window"}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":0,"status":200,"note":"latest items 2026-05-14, outside 24h window"}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","items":1,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":0,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":5,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":0,"status":200,"note":"feed items outside 24h window"}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":2,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":2,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":1,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":5,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":5,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":5,"status":200}}
+{"ts":"2026-05-18T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan","items":2,"status":200,"note":"redirect to nadanews.com followed"}}
+{"ts":"2026-05-18T09:07:49+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":3}}
+{"ts":"2026-05-18T09:07:49+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":0}}
+{"ts":"2026-05-18T09:07:49+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":1}}
+{"ts":"2026-05-18T09:07:49+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":8}}
+{"ts":"2026-05-18T09:07:49+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":8}}
+{"ts":"2026-05-18T09:07:49+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":0}}
+{"ts":"2026-05-18T09:07:49+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":2}}
+{"ts":"2026-05-18T09:10:14+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260518-090149.md","items_total":22}}
+{"ts":"2026-05-18T09:10:21+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"b49d161"}}
+{"ts":"2026-05-18T09:13:25+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"draft_created","subject_date":"2026-05-18","note":"Gmail MCP only supports create_draft; no send tool available"}}
+{"ts":"2026-05-18T09:13:25+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":696,"status":"partial_success","items_total":22,"errors_count":8}}

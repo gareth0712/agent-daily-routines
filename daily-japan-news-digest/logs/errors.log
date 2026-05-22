@@ -1,0 +1,6 @@
+{"ts":"2026-05-22T09:13:15+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-05-22T09:13:19+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-05-22T09:13:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"fetch blocked: Claude Code is unable to fetch from www.nhk.or.jp"}}
+{"ts":"2026-05-22T09:13:41+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"fetch blocked: Claude Code is unable to fetch from www.asahi.com"}}
+{"ts":"2026-05-22T09:13:43+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"feed contains only April 2024 items, 0 items within 24h lookback window"}}
+{"ts":"2026-05-22T09:31:00+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP requires re-authorization (token expired)","subject_date":"2026-05-22"}}

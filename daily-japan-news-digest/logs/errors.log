@@ -1,0 +1,6 @@
+{"ts":"2026-05-27T09:07:15+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-05-27T09:07:15+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-05-27T09:07:15+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Fetch blocked: domain access restricted"}}
+{"ts":"2026-05-27T09:07:15+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Fetch blocked: domain access restricted"}}
+{"ts":"2026-05-27T09:07:15+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","error":"RSS feed missing pubDate fields; cannot filter by recency"}}
+{"ts":"2026-05-27T09:10:30+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail OAuth authentication incomplete — user authorization URL presented but callback not yet received; email not sent","subject_date":"2026-05-27"}}

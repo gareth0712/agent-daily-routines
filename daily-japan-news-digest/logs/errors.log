@@ -1,0 +1,7 @@
+{"ts":"2026-05-29T09:05:18+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-05-29T09:05:18+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-05-29T09:05:18+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"fetch blocked by network policy"}}
+{"ts":"2026-05-29T09:05:18+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"fetch blocked by network policy"}}
+{"ts":"2026-05-29T09:05:18+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","error":"feed contains no pubDate fields; cannot filter by 24h window"}}
+{"ts":"2026-05-29T09:05:18+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"feed lastBuildDate is 2024-04-02; no recent items available"}}
+{"ts":"2026-05-29T09:05:18+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail OAuth not completed — user authorization pending","subject_date":"2026-05-29"}}

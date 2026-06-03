@@ -1,0 +1,20 @@
+{"ts":"2026-06-03T09:05:38+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-06-03","timestamp":"20260603-090538"}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":20,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":5,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":1,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":12,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","items":0,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":20,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":20,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":4,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":3,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":15,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":9,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":20,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":5,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","items":0,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"あたらしい経済","items":5,"status":200}}
+{"ts":"2026-06-03T09:16:57+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","items":5,"status":200}}
+{"ts":"2026-06-03T09:21:18+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260603-090538.md","items_total":53}}
+{"ts":"2026-06-03T09:21:28+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"0cdfab3"}}
+{"ts":"2026-06-03T09:21:53+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":600,"status":"partial_success","items_total":53,"errors_count":6}}

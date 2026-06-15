@@ -1,0 +1,5 @@
+{"ts":"2026-06-15T09:08:45+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-06-15T09:08:45+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-06-15T09:10:00+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Claude Code is unable to fetch from www.nhk.or.jp (blocked)"}}
+{"ts":"2026-06-15T09:10:00+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Claude Code is unable to fetch from www.asahi.com (blocked)"}}
+{"ts":"2026-06-15T09:26:00+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP requires browser-based OAuth which is unavailable in unattended routine execution; authentication not completed","subject_date":"2026-06-15"}}

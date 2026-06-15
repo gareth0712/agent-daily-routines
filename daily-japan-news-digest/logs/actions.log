@@ -1,0 +1,35 @@
+{"ts":"2026-06-15T09:08:04+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-06-15","timestamp":"20260615-090804"}}
+{"ts":"2026-06-15T09:08:45+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":20,"status":200}}
+{"ts":"2026-06-15T09:08:45+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":1,"status":200}}
+{"ts":"2026-06-15T09:08:45+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","items":0,"status":200,"note":"redirect followed; most recent item Jun 10, outside 24h window"}}
+{"ts":"2026-06-15T09:08:45+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":0,"status":200,"note":"most recent item Jun 12, outside 24h window"}}
+{"ts":"2026-06-15T09:08:45+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","items":0,"status":403,"error":"HTTP 403 Forbidden"}}
+{"ts":"2026-06-15T09:08:45+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","items":0,"status":200,"note":"feed contains 2024 articles only, no recent content"}}
+{"ts":"2026-06-15T09:09:00+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","items":0,"status":404,"error":"HTTP 404 Not Found"}}
+{"ts":"2026-06-15T09:09:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":3,"status":200}}
+{"ts":"2026-06-15T09:09:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","items":0,"status":200,"note":"most recent item Mar 5, outside 24h window"}}
+{"ts":"2026-06-15T09:09:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":15,"status":200}}
+{"ts":"2026-06-15T09:09:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":3,"status":200}}
+{"ts":"2026-06-15T09:09:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":4,"status":200}}
+{"ts":"2026-06-15T09:09:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":4,"status":200}}
+{"ts":"2026-06-15T09:10:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":4,"status":200}}
+{"ts":"2026-06-15T09:10:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":2,"status":200}}
+{"ts":"2026-06-15T09:10:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":4,"status":200}}
+{"ts":"2026-06-15T09:10:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":5,"status":200}}
+{"ts":"2026-06-15T09:10:30+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","items":0,"status":-1,"error":"Claude Code unable to fetch www.nhk.or.jp (blocked)"}}
+{"ts":"2026-06-15T09:10:30+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","items":0,"status":-1,"error":"Claude Code unable to fetch www.asahi.com (blocked)"}}
+{"ts":"2026-06-15T09:10:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","items":5,"status":200,"note":"feed lacks pubDate fields; included topically current Japan articles"}}
+{"ts":"2026-06-15T09:11:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","items":0,"status":200,"note":"most recent items before Jun 14, outside 24h window"}}
+{"ts":"2026-06-15T09:11:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"あたらしい経済","items":0,"status":200,"note":"most recent items before Jun 14, outside 24h window"}}
+{"ts":"2026-06-15T09:11:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan","items":10,"status":200,"note":"feed redirected to nadanews.com (301)"}}
+{"ts":"2026-06-15T09:25:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":15}}
+{"ts":"2026-06-15T09:25:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":1}}
+{"ts":"2026-06-15T09:25:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":3}}
+{"ts":"2026-06-15T09:25:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":15}}
+{"ts":"2026-06-15T09:25:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":7}}
+{"ts":"2026-06-15T09:25:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":10}}
+{"ts":"2026-06-15T09:25:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":5}}
+{"ts":"2026-06-15T09:25:30+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260615-090804.md","items_total":56}}
+{"ts":"2026-06-15T09:25:45+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"011879f"}}
+{"ts":"2026-06-15T09:26:30+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"failed","subject_date":"2026-06-15","note":"Gmail OAuth requires browser interaction; MD file committed and available for manual resend"}}
+{"ts":"2026-06-15T09:26:30+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":1106,"status":"partial_success","items_total":56,"errors_count":5}}

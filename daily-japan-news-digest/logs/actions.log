@@ -1,0 +1,28 @@
+{"ts":"2026-06-16T09:06:22+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-06-16","timestamp":"20260616-090622"}}
+{"ts":"2026-06-16T09:07:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":3,"status":200}}
+{"ts":"2026-06-16T09:07:32+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":0,"status":200}}
+{"ts":"2026-06-16T09:07:33+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","items":0,"status":200}}
+{"ts":"2026-06-16T09:07:34+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":0,"status":200}}
+{"ts":"2026-06-16T09:07:35+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","items":0,"status":200}}
+{"ts":"2026-06-16T09:07:36+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":4,"status":200}}
+{"ts":"2026-06-16T09:07:37+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":5,"status":200}}
+{"ts":"2026-06-16T09:07:38+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":3,"status":200}}
+{"ts":"2026-06-16T09:07:39+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":4,"status":200}}
+{"ts":"2026-06-16T09:07:40+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":4,"status":200}}
+{"ts":"2026-06-16T09:07:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":3,"status":200}}
+{"ts":"2026-06-16T09:07:42+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":9,"status":200}}
+{"ts":"2026-06-16T09:07:43+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":12,"status":200}}
+{"ts":"2026-06-16T09:07:44+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":3,"status":200}}
+{"ts":"2026-06-16T09:07:46+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","items":0,"status":200}}
+{"ts":"2026-06-16T09:07:47+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"あたらしい経済","items":3,"status":200}}
+{"ts":"2026-06-16T09:07:48+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan (nadanews.com)","items":5,"status":200}}
+{"ts":"2026-06-16T09:10:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":3}}
+{"ts":"2026-06-16T09:10:01+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":0}}
+{"ts":"2026-06-16T09:10:02+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":4}}
+{"ts":"2026-06-16T09:10:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":15}}
+{"ts":"2026-06-16T09:10:04+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":15}}
+{"ts":"2026-06-16T09:10:05+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":8}}
+{"ts":"2026-06-16T09:10:06+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":0}}
+{"ts":"2026-06-16T09:10:10+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260616-090622.md","items_total":45}}
+{"ts":"2026-06-16T09:10:30+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"c05a928"}}
+{"ts":"2026-06-16T09:11:10+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":288,"status":"partial_success","items_total":45,"errors_count":7}}

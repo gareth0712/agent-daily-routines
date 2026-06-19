@@ -1,0 +1,6 @@
+{"ts":"2026-06-19T09:05:03+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-06-19T09:05:30+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-06-19T09:06:00+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Access denied / fetch blocked"}}
+{"ts":"2026-06-19T09:06:30+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Access denied / fetch blocked"}}
+{"ts":"2026-06-19T09:06:30+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"Feed content appears to be stale (April 2024), no items within 24h window"}}
+{"ts":"2026-06-19T09:15:05+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP server requires OAuth authentication; cannot complete interactive OAuth flow in unattended scheduled routine","subject_date":"2026-06-19"}}

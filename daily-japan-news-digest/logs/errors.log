@@ -1,0 +1,5 @@
+{"ts":"2026-06-20T09:06:15+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-06-20T09:06:38+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-06-20T09:07:55+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"access denied by network policy"}}
+{"ts":"2026-06-20T09:07:57+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"access denied by network policy"}}
+{"ts":"2026-06-20T09:13:00+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP server not available in this session","subject_date":"2026-06-20"}}

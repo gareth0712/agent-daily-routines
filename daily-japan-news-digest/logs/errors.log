@@ -1,0 +1,8 @@
+{"ts":"2026-06-24T09:25:08+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"access blocked or no items in 24h window"}}
+{"ts":"2026-06-24T09:25:08+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"access blocked or no items in 24h window"}}
+{"ts":"2026-06-24T09:25:08+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"no items found in 24h window"}}
+{"ts":"2026-06-24T09:25:08+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","url":"https://www.ai-shift.co.jp/techblog/feed","error":"no items found in 24h window"}}
+{"ts":"2026-06-24T09:25:08+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","url":"https://deepmind.com/blog/feed/basic/","error":"no items found in 24h window"}}
+{"ts":"2026-06-24T09:25:08+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","url":"https://feeds.feedburner.com/blogspot/gJZg","error":"no items found in 24h window"}}
+{"ts":"2026-06-24T09:25:08+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"no items found in 24h window"}}
+{"ts":"2026-06-24T09:26:22+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP connector not available in this session","subject_date":"2026-06-24"}}

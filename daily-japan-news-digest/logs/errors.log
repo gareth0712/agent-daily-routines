@@ -1,0 +1,6 @@
+{"ts":"2026-07-05T09:05:16+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-07-05T09:05:22+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-07-05T09:05:42+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Fetch blocked by proxy policy"}}
+{"ts":"2026-07-05T09:05:43+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Fetch blocked by proxy policy"}}
+{"ts":"2026-07-05T09:05:44+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"RSS feed returns stale content from April 2024; skipping"}}
+{"ts":"2026-07-05T09:20:30+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP server requires OAuth authentication; not available in non-interactive session","subject_date":"2026-07-05"}}

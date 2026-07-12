@@ -1,0 +1,30 @@
+{"ts":"2026-07-12T09:05:15+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-07-12","timestamp":"20260712-090515"}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":5,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":5,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":3,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":4,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":4,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":1,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":2,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":5,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":3,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","items":3,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"あたらしい経済","items":0,"status":200}}
+{"ts":"2026-07-12T09:10:17+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan (nadanews)","items":5,"status":200}}
+{"ts":"2026-07-12T09:10:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":5}}
+{"ts":"2026-07-12T09:10:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":0}}
+{"ts":"2026-07-12T09:10:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":0}}
+{"ts":"2026-07-12T09:10:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":15}}
+{"ts":"2026-07-12T09:10:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":11}}
+{"ts":"2026-07-12T09:10:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":3}}
+{"ts":"2026-07-12T09:10:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":5}}
+{"ts":"2026-07-12T09:13:36+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260712-090452.md","items_total":39}}
+{"ts":"2026-07-12T09:13:55+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"a4342d9"}}
+{"ts":"2026-07-12T09:14:05+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":370,"status":"partial_success","items_total":39,"errors_count":5}}

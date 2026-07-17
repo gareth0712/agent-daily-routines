@@ -1,0 +1,47 @@
+{
+  "skill_name": "autonomous-project-discovery",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have a blank repository and want to build an AI agent platform for non-technical operations teams. The initial request says only: users should create agents, connect company data, and let agents take actions. Run project discovery, but do not implement production code. Produce durable artifacts that another fresh session can resume from, and decide whether Planning is ready.",
+      "expected_output": "A full Discovery run that inspects available territory, frames the underlying problem without selecting detailed architecture, and writes current canonical DISCOVERY.md and AGENT-STATE.md with an evidence-backed readiness route.",
+      "files": [],
+      "expectations": [
+        "AGENT-STATE.md records protocol_version: autonomous-artifacts-v2, workflow_type: discovery, discovery_depth: full, numeric session_budget/completed_weight, artifact revision/freshness fields, and an exact continuation_command.",
+        "DISCOVERY.md separates facts, evidence-backed inferences, assumptions, proposals, and rejected framings, and contains exactly one Planning readiness: READY or Planning readiness: NOT_READY line.",
+        "DISCOVERY.md owns users, outcomes, scope, non-goals, hard constraints, primary journeys, and acceptance intent without selecting detailed components, API/data contracts, implementation packages, or production stages.",
+        "Every retained unknown uses exactly one of known_known, known_unknown, unknown_known, candidate_unknown_unknown and has non-empty decision_unlocked, owner, and an allowed disposition.",
+        "Runner-owned audit records initial/final tracked Git SHA and status plus observed filesystem scope. It shows executor-created files are only Discovery artifacts under the assigned output root and include no production implementation files; every external-effect channel the runner cannot observe is explicitly labeled `unaudited`, and no unobserved channel is claimed clean."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "In the supplied copied SaaS fixture, explore a new billing and entitlements subsystem spanning checkout, webhook handling, plan enforcement, admin controls, and telemetry. Inspect `SOURCE.md` first, then inspect only the copied paths named by the fixture; do not infer that missing upstream repository areas were inspected. The copied repository has product documentation but no discovery artifact for billing. Select the correct Discovery depth, identify source-tied project-specific blind spots, and route honestly when framing is insufficient.",
+      "expected_output": "A copied-repository-evidence-driven targeted or full Discovery decision with explicit depth factors, bounded packets, owned unknowns, fixture revision/path evidence, and backward/forward routing without premature system design.",
+      "files": [
+        "evals/fixtures/nextjs-saas-starter-6e33e58/"
+      ],
+      "expectations": [
+        "The depth decision is exactly `targeted` or `full`; substantive DISCOVERY.md evidence rows named greenfield_status, ambiguity, blast_radius, irreversibility, and artifact_freshness make `skip` insufficient.",
+        "Durable worker progress/report evidence records `SOURCE.md` as the first named fixture read; repository findings cite copied fixture paths and upstream revision `6e33e58b1e553a41fe22e6b941a7229a002de361`; unavailable upstream evidence is not invented, and host-private read syscalls are not claimed independently audited.",
+        "At least two candidate_unknown_unknown blind spots are tied to named billing decisions and distinct copied source paths, such as subscription state without an entitlement model, checkout/webhook consistency or idempotency, or activity telemetry missing billing/admin events. No claim says the set is exhaustive, and no particular proposed architecture is required.",
+        "Every D-### packet names decision_unlocked, owner, disposition, Small/1 or Medium/2 sizing, dependencies, observable verification, fallback, and a bounded stop condition; Large is split before dispatch.",
+        "For this insufficient-framing case, discovery_readiness is `not_ready` and next_stage is `DISCOVERY`, while architecture-only mechanisms are assigned to Planning; `stale` is reserved for a current artifact contradicted by newer evidence and is not misapplied here."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Explore a food-and-health companion for families. The user cannot state whether they prefer coaching, tracking, or household coordination until they see concrete flows. The host exposes fresh workers but no model selector or context-usage telemetry, and a manual restart is required between sessions. Use cheap examples or a disposable prototype only if they unlock a named decision, then persist a resumable state and stop at the real preference gate.",
+      "expected_output": "A bounded preference-oriented Discovery run that surfaces an unknown known with meaningfully different disposable examples, asks one focused question, persists capability fallbacks and handoff state, and does not claim unattended continuation.",
+      "files": [],
+      "expectations": [
+        "The preference item is classified unknown_known with non-empty decision_unlocked, owner, and disposition, and each retained example/prototype packet names that same decision and an observable stop condition.",
+        "The orchestrator records requested_model, effective_model: host_default, and a non-empty fallback_reason per worker without claiming the preferred model ran.",
+        "AGENT-STATE.md records context_telemetry: unavailable and enforces session_budget: 4 for the UI/preference gate using Small/1 or Medium/2 packets.",
+        "Once the real preference gate unlocks the next decision, no extra worker is dispatched merely to spend the remaining budget; SESSION-HANDOFF.md records continuation_kind, continuation_verification, and the exact continuation_command value, using a precise manual_host_action instead of unverified CLI syntax.",
+        "The workflow presents meaningfully different alternatives, asks at most one focused preference question, persists the pause, and states that restart is manual rather than literally unattended.",
+        "Production EVENTS.jsonl records report/evidence observation, orchestrator sampling, then the verified transition; the independent runner observes the file writes and transition, then performs authenticated immutable sampling plus a separate verification. Both layers are monotonic and hash/revision-backed, and production events are not the sole acceptance evidence."
+      ]
+    }
+  ]
+}

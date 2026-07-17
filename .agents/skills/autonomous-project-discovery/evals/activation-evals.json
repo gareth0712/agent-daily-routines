@@ -1,0 +1,107 @@
+{
+  "skill_name": "autonomous-project-discovery",
+  "purpose": "Executable-ready trigger and first-stage classification contract; these cases define expected ownership decisions and do not claim a runner executed them.",
+  "evaluation_mode": "classification_contract_not_execution_evidence",
+  "cases": [
+    {
+      "id": 1,
+      "prompt": "Build me a new AI agent platform.",
+      "should_trigger_autonomous_project_discovery": true,
+      "first_stage": "Discovery",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "DISCOVERY.md",
+      "follow_up": "Planning, then Implementation only after both readiness gates",
+      "reason": "Greenfield build with no current Discovery artifact."
+    },
+    {
+      "id": 2,
+      "prompt": "Help me explore whether I should build a personal OS.",
+      "should_trigger_autonomous_project_discovery": true,
+      "first_stage": "Discovery",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "DISCOVERY.md",
+      "follow_up": "Stop after Discovery unless later requested",
+      "reason": "The request explicitly asks for project framing, not execution."
+    },
+    {
+      "id": 3,
+      "prompt": "Create an implementation plan for the project described in project-discovery.md.",
+      "should_trigger_autonomous_project_discovery": false,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "A current sufficient Discovery artifact or documented equivalent",
+      "follow_up": "Planning only unless execution is requested",
+      "reason": "The request supplies upstream framing; Planning owns the executable design after its freshness gate."
+    },
+    {
+      "id": 4,
+      "prompt": "Implement the approved plan in implementation-plan.md.",
+      "should_trigger_autonomous_project_discovery": false,
+      "first_stage": "Implementation",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "A current approved plan plus referenced Discovery evidence",
+      "follow_up": "Execute only after consistency/readiness validation",
+      "reason": "A direct execution request with an approved upstream plan should not restart broad Discovery."
+    },
+    {
+      "id": 5,
+      "prompt": "Fix the incorrect loading state in the existing dashboard.",
+      "should_trigger_autonomous_project_discovery": false,
+      "first_stage": "Ordinary scoped implementation",
+      "competing_owner": "ordinary scoped workflow",
+      "required_artifact": "None",
+      "follow_up": "No autonomous pipeline by default",
+      "reason": "Small, well-specified work in an understood existing project."
+    },
+    {
+      "id": 6,
+      "prompt": "Add a new billing subsystem to the existing SaaS; users, recovery policy, admin authority, and billing scope are still ambiguous.",
+      "should_trigger_autonomous_project_discovery": true,
+      "first_stage": "Discovery depth gate",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "Depth decision and DISCOVERY.md when targeted/full",
+      "follow_up": "Planning after Discovery readiness",
+      "reason": "A materially ambiguous major subsystem needs targeted/full Discovery before architecture Planning."
+    },
+    {
+      "id": 7,
+      "prompt": "Continue yesterday's implementation from current AGENT-STATE.md.",
+      "should_trigger_autonomous_project_discovery": false,
+      "first_stage": "Implementation rehydration",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "AGENT-STATE.md and current upstream artifacts",
+      "follow_up": "Continue the verified next stage unless a framing contradiction is found",
+      "reason": "Continuation uses durable state and does not restart upstream work without evidence."
+    },
+    {
+      "id": 8,
+      "prompt": "Offline-first is now a core product outcome: users must complete the primary journey without connectivity, resolve conflicts later, and the accepted scope and success criteria must change.",
+      "should_trigger_autonomous_project_discovery": true,
+      "first_stage": "Discovery for the affected offline framing scope",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "Contradiction/supersession evidence and refreshed Discovery framing",
+      "follow_up": "Return to Planning after users, outcomes, scope, journeys, and acceptance intent are current",
+      "reason": "Offline mode changes product framing, not merely architecture."
+    },
+    {
+      "id": 9,
+      "prompt": "The current architecture cannot support the newly required offline mode, but users, outcomes, product scope, primary journeys, and acceptance intent are unchanged.",
+      "should_trigger_autonomous_project_discovery": false,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "Current framing plus architecture contradiction evidence",
+      "follow_up": "Bounded Planning repair before Implementation resumes",
+      "reason": "An architecture-only contradiction is Planning-owned when framing remains current."
+    },
+    {
+      "id": 10,
+      "prompt": "Build a brand-new, fully specified single-user desktop expense tracker: local SQLite only, CSV import, monthly/category reports, no cloud, no accounts, Windows and macOS packaging, automated tests, and no telemetry. No Discovery or planning artifact exists.",
+      "should_trigger_autonomous_project_discovery": true,
+      "first_stage": "Discovery",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "DISCOVERY.md",
+      "follow_up": "Planning only after Discovery readiness, then Implementation because build was requested",
+      "reason": "A detailed greenfield brief without a current sufficient Discovery artifact still enters Discovery first; detail may shorten the pass but cannot bypass it."
+    }
+  ]
+}

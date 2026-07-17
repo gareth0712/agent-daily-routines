@@ -1,0 +1,67 @@
+{
+  "skill_name": "autonomous-planning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use the supplied `evals/fixtures/eval-1-current-large/` fixture. Read `inputs/REQUEST.md` and `inputs/DISCOVERY.md`, inspect `inputs/repository/SOURCE.md` first and then the relevant copied repository paths, and create an execution-ready plan for the current billing-administration scope. This same current request also asks to execute that exact bounded scope after Planning, but grants no external, irreversible, live-data, public, or deployment effect. Persist the delegated execution authority durably without implementing product code. Work only in an isolated output root with sequential fresh Planning workers. The data migration and admin UI make this a high-risk/UI Planning session. Do not modify fixture or product files, and hand off before the weighted ceiling would be exceeded.",
+      "expected_output": "A durable multi-session Planning run that validates current Discovery/repository evidence, splits all Large work into ordered Small/Medium packets, uses the exact high-risk ceiling, synthesizes complete implementation Task Contracts, obtains independent review, and emits current delegated execution-authority evidence before routing to Implementation.",
+      "files": [
+        "evals/fixtures/eval-1-current-large/",
+        "evals/fixtures/MANIFEST.sha256"
+      ],
+      "expectations": [
+        "AGENT-STATE.md records protocol_version: autonomous-artifacts-v2, workflow_type: planning, accepted Discovery path/revision/freshness evidence, repository revision and dirty paths, session_budget: 4 exactly, numeric completed_weight, packet statuses, exact approval mapping, and exact continuation state.",
+        "Every P-### packet has one primary Planning outcome, dependencies, Small/1 or Medium/2 size, verification, fallback, authority, stop boundary, and report/evidence paths; Planning workers and final review are dispatched and accepted sequentially with no Large packet.",
+        "Before each dispatch the run records completed_weight + next_packet_weight <= 4. If the next sum would exceed 4, it writes SESSION-HANDOFF.md and stops without merging outcomes, lowering verification, or treating the ceiling as a target.",
+        "Remediation accounting reconciles worker_dispatched events, immutable attempt-specific return receipts, packet retry_count, and remediation_cycles_this_session: side-effect-free local validation-command corrections inside one worker attempt count zero, while every actual new worker dispatch for the same packet after a terminal non-accepted attempt increments exactly once; cutover reasons use those reconciled counts.",
+        "MASTER-PLAN.md cites the vendored SOURCE/repository paths and covers relevant architecture, interfaces, data/workflows, migration/rollback, testing, deployment/observability, dependency order, and read-only fixture preservation.",
+        "Because this high-risk billing architecture qualifies, MASTER-PLAN.md contains one bounded System design scenario matrix comparing Small / Baseline, Medium / Growth and HA, and Enterprise / High-scale or mission-critical over identical product invariants. A defined workload/risk envelope and explicit assumptions—not fixed user-count bands—drive the recommended current profile; correctness, security, privacy, and safety remain identical across profiles; every applicable domain is required, evidenced not_applicable, or deferred with owner, validation action, separate measurable upgrade trigger, and decision deadline. Resilience, recovery, operations, security, cost, and transition/rollback are explicit; Task Contracts cover only the current profile unless the current execution request explicitly authorizes named future-profile work with exact path/revision/authority/profiles. No precise traffic, SLO, capacity, recovery, or cost number is invented.",
+        "Every implementation Task Contract contains Goal, inputs/freshness, dependencies, in/out scope, owned surfaces, Allowed side effects, decision authority, constraints, concrete verification/expected signal/representative flow, fallback/rollback, UAT timing, and completion/stop. External, irreversible, live-data, and public side effects are none/not_authorized unless exact authority is cited.",
+        "A fresh final-review P-### packet checks Discovery alignment, feasibility, consistency, verification, contracts, and scope leakage. CRITICAL findings close only by verified repair or routed ownership, never accepted risk; non-critical risk acceptance names authority.",
+        "SCOPE.md durably records this request's exact Planning scope/stop boundary, execution_not_requested, and none/not_authorized side-effect ceiling. MASTER-PLAN.md, AGENT-STATE.md, and SESSION-HANDOFF.md use planning_approval_state: not_requested with planning_approval_evidence path/revision/authority all none; independent review/readiness is not misrepresented as approval.",
+        "A later UI UAT gate is recorded in scheduled_downstream_gates after automatic UI verification and does not block Implementation start; every pre_implementation_blocking gate cites the exact upstream ownership/authority boundary exceeded, and no gate reassigns an explicitly delegated Planning-owned architecture/interface/security mechanism. No product or fixture file changes occur.",
+        "Every worker has an orchestrator-owned worker-return receipt proving fresh identity, terminal subtree status, report/evidence hashes, exact line_count <= 10, and lifecycle times no later than observation events; final Planning artifacts use an immutable finalization manifest and have no stale event reference hashes."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Use the supplied `evals/fixtures/eval-2-stale-after-compaction/` fixture. A compacted summary and old checkbox claim Planning completed, but `inputs/CURRENT-REQUIREMENTS.md` contradicts `inputs/predecessor/DISCOVERY.md` and the predecessor report/evidence/events are absent. Reconstruct from durable artifacts and current evidence, do not invent offline architecture, do not modify fixture/product files, and route the smallest affected scope to its owner.",
+      "expected_output": "A compaction-safe reconciliation that rejects unsupported completion, marks the contradicted Discovery framing stale, preserves contradiction/supersession evidence, and routes the affected scope to Discovery before Planning continues.",
+      "files": [
+        "evals/fixtures/eval-2-stale-after-compaction/",
+        "evals/fixtures/MANIFEST.sha256"
+      ],
+      "expectations": [
+        "Conversation summary and checkbox claims are unverified; predecessor AGENT-STATE.md, DISCOVERY.md, MASTER-PLAN.md, absent report/evidence/events, and CURRENT-REQUIREMENTS.md are reconciled before dispatch.",
+        "The abc123 Discovery source is marked STALE/stale because def456 changes product framing, with contradiction/supersession evidence; first/next stage is Discovery for only the affected offline-first scope.",
+        "Autonomous Planning does not treat this stale-framing case as its own first-stage trigger and no Planning worker invents storage, sync, merge/conflict, tombstone, or UI policy before refreshed Discovery authority exists.",
+        "Unsupported verified/completed state is downgraded and completed weight is recomputed only from existing report/evidence. Missing lifecycle artifacts are recorded rather than fabricated.",
+        "The stale checkbox or compacted summary does not create delegated or explicit execution approval; no planning_approval_evidence is invented while Discovery owns the route.",
+        "SESSION-HANDOFF.md names current revisions, contradiction evidence, owning stage, first-read files, and exact continuation action without claiming automatic restart or unsupported CLI syntax.",
+        "No product, fixture, migration, test, deployment configuration, unrelated path, secret, or external state is modified.",
+        "The terminal event references only an immutable finalization manifest/frozen versioned artifacts whose current SHA-256 values still match; live AGENT-STATE.md and SESSION-HANDOFF.md carry the returned terminal anchor and are not terminal-event references."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Use the supplied `evals/fixtures/eval-3-equivalent-artifact/` fixture. Read `inputs/product-brief.md` as a candidate content-equivalent Discovery artifact and inspect `inputs/repository/AGENTS.md`, package, store, route, and test surfaces. The host has fresh workers but no model selector, context telemetry, or automatic top-level restart. The required UI review/UAT makes this a UI Planning session. This is planning-only; execution is not requested. Finish independently reviewed Planning without modifying or committing fixture/product files.",
+      "expected_output": "A portable Planning run that accepts the equivalent artifact through explicit field/freshness mapping, records constrained-host fallbacks honestly, uses the exact UI ceiling, creates complete Task Contracts, and writes a manual resumable handoff when needed.",
+      "files": [
+        "evals/fixtures/eval-3-equivalent-artifact/",
+        "evals/fixtures/MANIFEST.sha256"
+      ],
+      "expectations": [
+        "The workflow accepts product-brief.md by content, lineage, and freshness rather than filename, records discovery_source_kind: equivalent plus field-mapping evidence, and cites the vendored repository revision/surfaces.",
+        "AGENT-STATE.md records requested/effective model with effective_model: host_default and non-empty fallback reason per worker, context_telemetry: unavailable, restart_mode: manual, and session_budget: 4 exactly.",
+        "Before each dispatch the run records completed_weight + next_packet_weight <= 4; a next sum over 4 produces SESSION-HANDOFF.md before dispatch without reducing verification or packet scope.",
+        "Full worker output is artifact-first; orchestrator-owned worker-return receipts prove fresh identity, terminal subtree status, exact line_count <= 10, and report/evidence timestamps no later than observation events. Sampling precedes verified transitions, and only sequential Small/1 or Medium/2 packets plus a fresh independent review are used.",
+        "Every exact Task Contract declares Allowed side effects, defaulting external/irreversible/live-data/public effects to none/not_authorized, and records the `[UI]` human UAT gate after automatic verification as scheduled_downstream rather than a pre-Implementation blocker.",
+        "Readiness has no unresolved pre_implementation_blocking_gates; correctly owned scheduled downstream UAT does not block Implementation start. CRITICAL review findings close only by verified repair or routed ownership.",
+        "Because execution is not requested, state/plan/handoff use planning_approval_state: not_requested and planning_approval_evidence path/revision/authority all none; route STOP after Planning without opening an unnecessary approval gate or treating review PASS as approval.",
+        "Continuation uses manual_host_action with absolute run root, first-read files, gate input, and next action unless a command was harmlessly verified; no fixture/product file is changed.",
+        "The exact final MASTER-PLAN.md is review-hash-bound or covered by a PASS metadata-only final-plan lock with zero pending-review markers; an immutable finalization manifest hashes every frozen terminal artifact, and the terminal event has no stale reference or post-observation timestamp.",
+        "Before readiness, every Task Contract is re-sized from its actual outcomes/coupled subsystems/independent verification boundaries, each mandatory architecture or interface prerequisite is backed by current repository evidence or an explicitly authorized earlier creation stage, and every parsed CSV record shape defines exact arity, malformed-input code/classification, deterministic multiple-error ordering, and—when the public tuple exposes both fields—one exact class/category for every stable error code with no ambiguous combined class cell."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "skill_name": "autonomous-implementation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use `autonomous-implementation` with the package-local `evals/fixtures/eval-1-small-non-ui/` fixture. Before any product edit, copy `inputs/repository/` to an isolated run-local working repository and create a separate run root; never edit fixture-source files. Read `inputs/REQUEST.md`, `DISCOVERY.md`, `MASTER-PLAN.md`, `PLANNING-REVIEW.md`, and the copied repository instructions/source. Execute the current approved non-UI stage, independently verify exact tests plus the representative real flow, then run a fresh integration review. No commits or external effects are authorized.",
+      "expected_output": "A complete artifact-driven small Implementation run that returns READY, freezes the Task Contract verbatim, uses one fresh implementation worker, independently proves scoped changes/tests/real flow, preserves the fixture, completes independent integration acceptance, and records actual-versus-plan evidence.",
+      "files": [
+        "evals/fixtures/eval-1-small-non-ui/",
+        "evals/fixtures/MANIFEST.sha256"
+      ],
+      "expectations": [
+        "The run works only in run-local copies; source fixture hashes remain identical. AGENT-STATE.md records protocol_version autonomous-artifacts-v2, workflow_type implementation, upstream paths/revisions/freshness, planning_approval_state delegated_execution_authority plus exact current evidence path/revision/authority, repository baseline, model/capability fallbacks, and READY from an independently sampled fresh readiness review. Its immutable receipt proves readiness worker identity, terminal subtree, canonical bounded return, report/evidence-before-host-return timing, and later acceptance disposition.",
+        "The I-001 Task Contract is copied verbatim and retains exact Allowed side effects, owned paths, constraints, tests, expected signals, representative flow, fallback, [non-UI], and stop boundary. External, irreversible, destructive, live-data, public, deploy, and messaging effects remain none/not_authorized.",
+        "Exactly one fresh state-changing worker implements the stage at a time, writes its full report/evidence before an at-most-ten-line return, and never updates AGENT-STATE.md or accepts its own work. An orchestrator-owned immutable return receipt proves dispatch/worker identity, full terminal subtree, exact line_count <= 10, report/evidence hashes, and lifecycle times before acceptance.",
+        "The orchestrator independently proves physical containment, exact changed-file scope, relevant changed artifact content, `node --test tests/search.test.js` passing, `node scripts/real-flow.js` printing exactly MATCH_IDS=2, and a real returned task object before marking verified; worker done or exit code alone is not evidence.",
+        "The implementation updates/adds tests for trim, case-insensitive matching, blank query, order, and non-mutation without unrelated refactors or dependencies.",
+        "A fresh read-only integration reviewer checks Discovery/Planning alignment, behavior, tests/flow, scope/side effects, dirty preservation, rollback, and deviations. Its immutable return receipt proves a distinct fresh identity, terminal lifecycle, bounded return, and report/evidence timing. IMPLEMENTATION-NOTES.md lists actual-versus-plan behavior, changed files, evidence, assumptions/deviations, checkpoint/rollback, residual gates, and final completion truth.",
+        "No fixture-source file, unrelated path, lockfile, secret, deployment, external state, or commit is changed; completion is claimed only after representative artifact sampling and zero unresolved critical integration findings."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Use `autonomous-implementation` with `evals/fixtures/eval-2-ui-multisession/`. Copy `inputs/repository/` to a run-local working repository and keep all run artifacts outside the fixture source. Read the request, current Discovery/Planning/review, and copied repository instructions/source. This is an exact `session_budget: 4` UI session: count the Small/1 readiness review plus each dispatched stage. Execute sequentially through automatic acceptance of I-102, produce real screenshot or live-localhost URL evidence, then open the scheduled human UAT gate. Do not dispatch I-103 before approval; at the four-unit boundary write a lossless handoff. No public deployment, external effect, or commit is authorized.",
+      "expected_output": "A bounded multi-session Implementation run that accepts current upstream artifacts, completes I-101 and automatic I-102 verification sequentially, reaches exactly four accepted weight units including readiness, presents actual UI evidence, pauses at durable UAT, and hands off without rushing or dispatching I-103.",
+      "files": [
+        "evals/fixtures/eval-2-ui-multisession/",
+        "evals/fixtures/MANIFEST.sha256"
+      ],
+      "expectations": [
+        "Run-local copies are created before product writes and fixture-source hashes remain unchanged. Fresh readiness confirms current delegated_execution_authority with exact path/revision/authority evidence and no pre_implementation_blocking_gates; its immutable receipt proves identity, terminal subtree, canonical bounded return, report/evidence-before-host-return timing, and later acceptance disposition. The planned I-102 UAT remains scheduled_downstream and does not block I-101/I-102 from starting.",
+        "AGENT-STATE.md records session_budget: 4 exactly and numeric completed_weight. Before every dispatch it records completed_weight + next_stage_weight <= 4. The accepted Small/1 readiness review, I-101 Small/1, and I-102 Medium/2 total exactly 4; I-103 is not dispatched in this session.",
+        "I-101 and I-102 run sequentially with one fresh state-changing worker each from verbatim contracts, report-before-state ordering, at-most-ten-line returns, exact Allowed side effects, and independent containment/diff/command/real-flow acceptance. Immutable attempt receipts prove each fresh identity, terminal subtree, exact line count, report/evidence hashes and times, and reconciled dispatch/receipt/retry/remediation counts.",
+        "I-101 evidence includes passing focused tests, activity-flow output exactly UNREAD_IDS=evt-3,evt-1, returned-record sampling, non-mutation, and no UI/read-state scope leakage.",
+        "For I-102, installed relevant design-taste preferences are requested and actual invocation or unavailable/not-installed fallback is recorded. Automatic verification includes functional rendered populated and empty states, semantic/accessibility checks, exact build/revision, and actual screenshot(s) or a live localhost URL; source inspection alone cannot pass.",
+        "After automatic UI acceptance, a canonical UAT gate records evidence, criteria, human owner, pending state, and I-103 as the blocked boundary. No dependent stage runs before recorded approval, and no approval is invented.",
+        "SESSION-HANDOFF.md records exact 4/4 weight, verified stages/evidence, UAT state/build, dirty/fixture preservation, event anchor, rollback/checkpoint, manual restart truth, first-read files, and precise continuation. No work is merged, weakened, or rushed to fit the ceiling."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Use `autonomous-implementation` with `evals/fixtures/eval-3-dirty-retry-model/`. First copy `inputs/current-repository/` and `inputs/resume-run/` to isolated run-local locations; never edit fixture sources. Reconcile the copied AGENT-STATE, EVENTS anchor, packet, report, independent failure evidence, upstream artifacts, current repository, and pre-existing dirty draft. The first PASS claim is contradicted, retry_count is already 1 for notification-flag-coercion, and the preferred model selector/context telemetry/automatic restart are unavailable. Diagnose before at most one final fresh bounded remediation, independently verify tests and real flow, preserve the draft hash, then perform integration review or block honestly; never start a third remediation.",
+      "expected_output": "A compaction-safe resumed Implementation run that distrusts the worker PASS, preserves the dirty draft and useful failed work, records host-default model fallback, performs at most one final evidence-driven repair, independently accepts or blocks it, and never resets audit/user state.",
+      "files": [
+        "evals/fixtures/eval-3-dirty-retry-model/",
+        "evals/fixtures/MANIFEST.sha256"
+      ],
+      "expectations": [
+        "The copied state is reconciled from AGENT-STATE.md, SCOPE.md, upstream artifacts including delegated_execution_authority and exact approval evidence path/revision/authority, packet/report/evidence, IMPLEMENTATION-NOTES.md, actual event chain/count/tip/full-file SHA-256, repository files, and physical run-local roots; captured anchors and conversation claims are not trusted. A fresh read-only rehydration/readiness review has an immutable receipt proving identity, terminal subtree, canonical bounded return, report/evidence-before-host-return timing, and later acceptance disposition before the final repair dispatch.",
+        "The I-201 worker PASS is rejected because independent test/real-flow evidence fails. failure_family notification-flag-coercion and retry_count 1 survive rehydration; diagnosis identifies string truthiness before one falsifiable final repair.",
+        "The requested Sonnet-class/high-effort worker and effective host_default with non-empty selector fallback are recorded, along with context_telemetry unavailable and restart_mode manual; no unsupported exact model or automatic continuation is claimed.",
+        "`notes/user-draft.md` begins and ends with SHA-256 1a840dc8914571ff9253a821f46abef9592e37dd5a41143ab8b435fe56bf6d12, remains outside owned paths/checkpoints, and has bounded preservation evidence. No destructive reset, broad restore/clean/stash, audit erasure, or unrelated edit occurs.",
+        "At most one final fresh repair worker is dispatched from the exact contract. Its immutable terminal attempt receipt proves fresh identity, exact line_count <= 10, report/evidence hashes and lifecycle times, and reconciles retry_count 1 to 2 with no third dispatch. The orchestrator independently checks containment/diff, focused tests, `node scripts/real-flow.js` output exactly NOTIFY_FALSE=false, returned boolean type/value, side-effect authority, and protected hash before verified; failure blocks without a third remediation.",
+        "Useful safe first-attempt work, failed report, independent failure evidence, event history, retry counter, and rollback point are preserved. Any stage-local revert is limited to exact I-201-owned paths and only for unsafe/invalid work.",
+        "A fresh integration review has its own immutable terminal return receipt proving distinct fresh identity, bounded return, and report/evidence timing. IMPLEMENTATION-NOTES.md records actual-versus-plan behavior, deviations/assumptions, changed files, model fallback, retries, verification, dirty proof, residual gates, checkpoint/rollback, and completion or honest blocked state. Fixture-source files, commits, secrets, and external effects remain untouched."
+      ]
+    }
+  ]
+}

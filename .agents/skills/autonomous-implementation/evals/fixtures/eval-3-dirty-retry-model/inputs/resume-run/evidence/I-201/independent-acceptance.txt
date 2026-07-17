@@ -1,0 +1,7 @@
+INDEPENDENT_ACCEPTANCE=FAIL
+FAILURE_FAMILY=notification-flag-coercion
+COMMAND=node --test tests/notify.test.js
+OBSERVED=expected false for string " false ", received true
+REAL_FLOW=node scripts/real-flow.js
+REAL_FLOW_OBSERVED=expected false, received true
+NEXT_ACTION=diagnose truthiness coercion before one final bounded remediation

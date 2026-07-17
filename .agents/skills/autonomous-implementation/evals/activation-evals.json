@@ -1,0 +1,106 @@
+{
+  "skill_name": "autonomous-implementation",
+  "purpose": "Executable-ready trigger and first-stage classification contract; these cases define expected ownership decisions and do not claim a runner executed them.",
+  "evaluation_mode": "classification_contract_not_execution_evidence",
+  "cases": [
+    {
+      "id": 1,
+      "prompt": "Build a new AI agent platform. We have no Discovery artifact, product brief, or implementation plan.",
+      "should_trigger_autonomous_implementation": false,
+      "first_stage": "Discovery",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "Current sufficient Discovery framing, then an approved execution-ready plan",
+      "reason": "Implementation cannot invent greenfield framing or execution contracts."
+    },
+    {
+      "id": 2,
+      "prompt": "Implement the current approved plan in MASTER-PLAN.md and continue through its non-UI stages.",
+      "should_trigger_autonomous_implementation": true,
+      "first_stage": "Implementation readiness review",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "Current execution-ready plan plus planning_approval_state delegated_execution_authority/explicitly_approved and current path/revision/authority evidence",
+      "reason": "Execution is requested with the required upstream artifact."
+    },
+    {
+      "id": 3,
+      "prompt": "Continue implementation, but current product requirements contradict users and scope in the Discovery artifact.",
+      "should_trigger_autonomous_implementation": false,
+      "first_stage": "Discovery for the affected framing scope",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "Contradiction/supersession evidence and refreshed Discovery framing",
+      "reason": "A framing-owned contradiction must be repaired upstream before product edits."
+    },
+    {
+      "id": 4,
+      "prompt": "Implement the plan, but its API contract and rollback procedure are missing and the repository now contradicts its sequence.",
+      "should_trigger_autonomous_implementation": false,
+      "first_stage": "Planning repair",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "Current repaired execution contract, sequencing, verification, and rollback",
+      "reason": "Architecture/contract defects are Planning-owned rather than local implementation choices."
+    },
+    {
+      "id": 5,
+      "prompt": "Fix the typo in the existing dashboard heading and run the focused test.",
+      "should_trigger_autonomous_implementation": false,
+      "first_stage": "Ordinary scoped implementation",
+      "competing_owner": "ordinary scoped workflow",
+      "required_artifact": "None",
+      "reason": "A small fully specified routine change does not justify the full pipeline by default."
+    },
+    {
+      "id": 6,
+      "prompt": "Explicitly use autonomous-implementation for this small approved loading-state plan; keep all artifact and verification gates.",
+      "should_trigger_autonomous_implementation": true,
+      "first_stage": "Implementation readiness review",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "Current exact Task Contract plus delegated/explicit approval state and current path/revision/authority evidence",
+      "reason": "Explicit pipeline invocation overrides the ordinary-small-work default without weakening safeguards."
+    },
+    {
+      "id": 7,
+      "prompt": "Continue yesterday's implementation from AGENT-STATE.md; upstream revisions are still current.",
+      "should_trigger_autonomous_implementation": true,
+      "first_stage": "Implementation rehydration",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "AGENT-STATE.md, current upstream and approval evidence, active packet/report/evidence, repository and event anchor",
+      "reason": "Current durable implementation state is reconciled rather than restarting upstream stages."
+    },
+    {
+      "id": 8,
+      "prompt": "The UI stage passed automatic checks yesterday and is waiting for my UAT decision; resume from its gate.",
+      "should_trigger_autonomous_implementation": true,
+      "first_stage": "Implementation UAT rehydration",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "Current UAT gate, accepted build/revision, screenshot or live URL, automatic evidence, and state",
+      "reason": "UAT is an Implementation-owned scheduled boundary and dependent work remains paused."
+    },
+    {
+      "id": 9,
+      "prompt": "Implement the approved current plan in my dirty worktree; preserve my unrelated draft and staged changes.",
+      "should_trigger_autonomous_implementation": true,
+      "first_stage": "Implementation readiness and dirty-consistency review",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "Current plan with delegated/explicit approval evidence plus baseline/current dirty-path evidence",
+      "reason": "A dirty tree does not prevent activation, but preservation evidence is mandatory before edits."
+    },
+    {
+      "id": 10,
+      "prompt": "Execute product-spec.md; it is approved, current, and contains every exact implementation Task Contract even though it is not named MASTER-PLAN.md.",
+      "should_trigger_autonomous_implementation": true,
+      "first_stage": "Implementation readiness review",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "Field-level mapping of equivalent plan content, delegated/explicit approval state with path/revision/authority, lineage, freshness, gates, and side effects",
+      "reason": "Equivalent execution plans are accepted by current content and authority, not filename."
+    },
+    {
+      "id": 11,
+      "prompt": "Implement the project described by current approved DISCOVERY.md, but no MASTER-PLAN.md, equivalent execution specification, or exact implementation Task Contract exists yet.",
+      "should_trigger_autonomous_implementation": false,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "A current approved execution-ready plan with exact Task Contracts and durable execution-authority evidence",
+      "reason": "Current product framing cannot substitute for Planning-owned architecture, sequencing, verification, rollback, and exact execution contracts."
+    }
+  ]
+}

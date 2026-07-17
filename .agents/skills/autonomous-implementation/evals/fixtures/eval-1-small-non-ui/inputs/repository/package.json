@@ -1,0 +1,9 @@
+{
+  "name": "implementation-eval-small-search",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "flow": "node scripts/real-flow.js"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "skill_name": "autonomous-planning",
+  "purpose": "Executable-ready trigger and first-stage classification contracts; this file defines expected decisions but does not claim a runner executed them.",
+  "evaluation_mode": "classification_contract_not_execution_evidence",
+  "cases": [
+    {
+      "id": 1,
+      "prompt": "Create an implementation plan for the project described in project-discovery.md.",
+      "should_trigger_autonomous_planning": true,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "A current sufficient Discovery artifact or content-equivalent framing",
+      "follow_up": "Stop after Planning unless execution is also requested",
+      "reason": "The request asks for an executable plan and supplies upstream framing."
+    },
+    {
+      "id": 2,
+      "prompt": "Plan a brand-new AI agent platform. No Discovery artifact or equivalent exists.",
+      "should_trigger_autonomous_planning": false,
+      "first_stage": "Discovery",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "DISCOVERY.md or current sufficient equivalent before Planning",
+      "follow_up": "Planning only after Discovery readiness",
+      "reason": "Planning cannot invent greenfield product framing."
+    },
+    {
+      "id": 3,
+      "prompt": "Resume planning, but current Git contradicts the product scope in the Discovery artifact.",
+      "should_trigger_autonomous_planning": false,
+      "first_stage": "Discovery for the affected framing scope",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "Contradiction/supersession evidence and refreshed Discovery artifact",
+      "follow_up": "Return to Planning after Discovery readiness",
+      "reason": "A framing-owned contradiction makes the upstream input stale."
+    },
+    {
+      "id": 4,
+      "prompt": "Implement the approved current plan in implementation-plan.md.",
+      "should_trigger_autonomous_planning": false,
+      "first_stage": "Implementation",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "Current plan plus planning_approval_state delegated_execution_authority/explicitly_approved and current path/revision/authority evidence",
+      "follow_up": "Execute after consistency/readiness validation",
+      "reason": "A current execution-ready plan must not be replanned without a concrete defect."
+    },
+    {
+      "id": 5,
+      "prompt": "Implement this current Discovery brief, but no executable plan exists yet.",
+      "should_trigger_autonomous_planning": true,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "Current sufficient Discovery artifact or equivalent",
+      "follow_up": "Planning persists delegated execution authority from this current request, then routes to Implementation after readiness",
+      "reason": "Execution cannot bypass the missing Planning stage, and Planning must emit durable authority rather than infer approval from readiness."
+    },
+    {
+      "id": 6,
+      "prompt": "Fix the incorrect loading state in the existing dashboard.",
+      "should_trigger_autonomous_planning": false,
+      "first_stage": "Ordinary scoped implementation",
+      "competing_owner": "ordinary scoped workflow",
+      "required_artifact": "None",
+      "follow_up": "No autonomous pipeline by default",
+      "reason": "A small well-specified existing-project change does not justify the full planning workflow."
+    },
+    {
+      "id": 7,
+      "prompt": "Continue yesterday's Planning run from AGENT-STATE.md.",
+      "should_trigger_autonomous_planning": true,
+      "first_stage": "Planning rehydration",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "AGENT-STATE.md, current Discovery source, MASTER-PLAN.md, and active packet/report evidence",
+      "follow_up": "Continue the reconciled next Planning action",
+      "reason": "Durable state is rehydrated rather than restarting or trusting chat history."
+    },
+    {
+      "id": 8,
+      "prompt": "Create an execution plan from current product-brief.md; it contains all Discovery decisions and freshness evidence.",
+      "should_trigger_autonomous_planning": true,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "Field-level content/lineage/freshness mapping for product-brief.md",
+      "follow_up": "Planning only unless execution is requested",
+      "reason": "Equivalent artifacts are accepted by content rather than filename."
+    },
+    {
+      "id": 9,
+      "prompt": "Continue yesterday's implementation from a current approved plan.",
+      "should_trigger_autonomous_planning": false,
+      "first_stage": "Implementation rehydration",
+      "competing_owner": "autonomous-implementation",
+      "required_artifact": "AGENT-STATE.md, current upstream artifacts, and current planning approval path/revision/authority evidence",
+      "follow_up": "Continue Implementation unless evidence reveals a Planning-owned defect",
+      "reason": "Planning must not take over an already ready execution run."
+    },
+    {
+      "id": 10,
+      "prompt": "The current architecture cannot support the newly required offline mode, but users, outcomes, and product scope are unchanged.",
+      "should_trigger_autonomous_planning": true,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "Current framing plus architecture contradiction evidence",
+      "follow_up": "Bounded Planning repair before Implementation resumes",
+      "reason": "An architecture-only contradiction is Planning-owned when framing remains current."
+    },
+    {
+      "id": 11,
+      "prompt": "Create an implementation plan from discovery-draft.md. The file exists but has no users, primary journeys, acceptance intent, revision, freshness evidence, or owner for open product decisions.",
+      "should_trigger_autonomous_planning": false,
+      "first_stage": "Discovery for the insufficient framing scope",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "A sufficient current Discovery artifact or equivalent",
+      "follow_up": "Return to Planning only after the missing framing fields and ownership are current",
+      "reason": "Artifact presence alone cannot bypass the field-level sufficiency gate."
+    },
+    {
+      "id": 12,
+      "prompt": "Add a new billing subsystem to our existing SaaS; users, recovery policy, admin authority, and billing scope are still ambiguous.",
+      "should_trigger_autonomous_planning": false,
+      "first_stage": "Discovery depth gate",
+      "competing_owner": "autonomous-project-discovery",
+      "required_artifact": "Targeted/full Discovery decision and current framing",
+      "follow_up": "Planning after Discovery readiness",
+      "reason": "A materially ambiguous major subsystem requires Discovery before architecture Planning."
+    },
+    {
+      "id": 13,
+      "prompt": "Explicitly use autonomous-planning for this small existing-project loading-state change. A current sufficient Discovery artifact is supplied; produce the bounded plan only and do not implement.",
+      "should_trigger_autonomous_planning": true,
+      "first_stage": "Planning",
+      "competing_owner": "autonomous-planning",
+      "required_artifact": "Current sufficient Discovery artifact plus explicit pipeline invocation",
+      "follow_up": "Stop after the bounded plan",
+      "reason": "Explicit invocation overrides the ordinary-small-work default while side-effect and readiness gates still apply."
+    }
+  ]
+}

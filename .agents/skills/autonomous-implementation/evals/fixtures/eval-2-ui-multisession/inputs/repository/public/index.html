@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workspace dashboard</title>
+    <style>
+      :root { color-scheme: light; font-family: ui-serif, Georgia, serif; background: #f4f0e8; color: #211f1b; }
+      body { margin: 0; }
+      main { width: min(760px, calc(100% - 40px)); margin: 48px auto; }
+      header { border-bottom: 1px solid #9b9488; padding-bottom: 24px; }
+      .account { margin-top: 24px; padding: 20px; background: #fffdf8; border: 1px solid #d4cdc0; }
+      .activity { margin-top: 32px; }
+      h1, h2, p { margin-top: 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header><p>Northstar Workspace</p><h1>Operations overview</h1></header>
+      <section class="account" aria-labelledby="account-title"><h2 id="account-title">Account</h2><p>Team plan · Active</p></section>
+      <div id="activity-root"></div>
+    </main>
+    <script type="module">
+      import { renderActivityPanel } from "/src/activity-view.js";
+      document.querySelector("#activity-root").innerHTML = renderActivityPanel();
+    </script>
+  </body>
+</html>

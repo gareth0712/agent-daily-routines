@@ -1,0 +1,10 @@
+{
+  "name": "implementation-eval-activity-center",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "flow": "node scripts/activity-flow.js",
+    "serve": "node scripts/server.js"
+  }
+}

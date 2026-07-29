@@ -51,3 +51,6 @@
 {"ts":"2026-07-29T09:06:23+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":5}}
 {"ts":"2026-07-29T09:06:24+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260729-090505.md","items_total":58}}
 {"ts":"2026-07-29T09:06:25+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"0e65a1d"}}
+{"ts":"2026-07-29T09:06:26+09:00","level":"INFO","action":"git_commit","detail":{"step":"logs","sha":"bb56d25"}}
+{"ts":"2026-07-29T09:06:27+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":87,"status":"partial_success","items_total":58,"errors_count":8}}
+{"ts":"2026-07-29T09:06:28+09:00","level":"INFO","action":"git_push","detail":{"branch":"main","remote":"origin","status":"success","sha":"bb56d25"}}

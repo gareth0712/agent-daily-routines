@@ -1,0 +1,23 @@
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-08-03","timestamp":"20260803-090624"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://zenn.dev/topics/claudecode/feed","items":5,"status":200,"category":"claude_code"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://rss.itmedia.co.jp/rss/2.0/aiplus.xml","items":5,"status":200,"category":"japan_ai"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://zenn.dev/topics/ai/feed","items":5,"status":200,"category":"japan_dev_community"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://zenn.dev/topics/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/feed","items":3,"status":200,"category":"japan_dev_community"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://qiita.com/tags/llm/feed","items":4,"status":200,"category":"japan_dev_community"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://qiita.com/tags/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/feed","items":4,"status":200,"category":"japan_dev_community"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml","items":5,"status":200,"category":"japan_tech"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://rss.itmedia.co.jp/rss/2.0/business.xml","items":5,"status":200,"category":"japan_tech"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://www.engadget.com/rss.xml","items":5,"status":200,"category":"japan_tech"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://techcrunch.com/feed/","items":5,"status":200,"category":"japan_tech"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://www.nadanews.com/feed/","items":5,"status":200,"category":"japan_crypto","note":"CoinDesk Japan redirected to nadanews.com"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"fetch_rss","detail":{"url":"https://asia.nikkei.com/rss/feed/nar","items":3,"status":200,"category":"japan_general","note":"no pubDate in feed, top items included"}}
+{"ts":"2026-08-03T09:10:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":5}}
+{"ts":"2026-08-03T09:10:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":0}}
+{"ts":"2026-08-03T09:11:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":5}}
+{"ts":"2026-08-03T09:11:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":5}}
+{"ts":"2026-08-03T09:12:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":5}}
+{"ts":"2026-08-03T09:12:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":0}}
+{"ts":"2026-08-03T09:12:35+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":0}}
+{"ts":"2026-08-03T09:17:00+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260803-090624.md","items_total":20}}
+{"ts":"2026-08-03T09:20:29+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"04e4c80"}}
+{"ts":"2026-08-03T09:20:29+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":662,"status":"partial_success","items_total":20,"errors_count":14}}

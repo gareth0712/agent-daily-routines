@@ -21,3 +21,13 @@
 {"ts":"2026-08-03T09:17:00+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260803-090624.md","items_total":20}}
 {"ts":"2026-08-03T09:20:29+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"04e4c80"}}
 {"ts":"2026-08-03T09:20:29+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":662,"status":"partial_success","items_total":20,"errors_count":14}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":5}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":0,"note":"no items within 24h window"}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":5}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":13}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":10}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":5}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":3}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260803-090624.md","items_total":41}}
+{"ts":"2026-08-03T09:06:24+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"440f18a"}}
+{"ts":"2026-08-03T09:10:15+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":231,"status":"partial_success","items_total":41,"errors_count":6}}

@@ -7,3 +7,4 @@
 {"ts":"2026-08-08T09:07:55+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"No items within 24h window; all articles dated 2024"}}
 {"ts":"2026-08-08T09:07:55+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","error":"RSS feed returned items with null pubDate; 24h filtering not possible, included top 5 items"}}
 {"ts":"2026-08-08T09:07:55+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","url":"https://deepmind.google/blog/feed/basic/","error":"No items within 24h window; newest item dated 2026-08-06"}}
+{"ts":"2026-08-08T09:26:55+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail connector requires OAuth authentication — not available in non-interactive scheduled session","subject_date":"2026-08-08"}}

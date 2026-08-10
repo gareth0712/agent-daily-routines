@@ -1,0 +1,8 @@
+{"ts":"2026-08-10T09:10:44+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-08-10T09:10:44+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-08-10T09:10:44+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","url":"https://www.ai-shift.co.jp/techblog/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-08-10T09:10:44+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"fetch_blocked"}}
+{"ts":"2026-08-10T09:10:44+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"fetch_blocked"}}
+{"ts":"2026-08-10T09:10:44+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","error":"no_pubDate_in_feed,items_unfiltered"}}
+{"ts":"2026-08-10T09:10:44+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"feed_data_2024_outdated"}}
+{"ts":"2026-08-10T09:10:44+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail connector requires OAuth authentication; non-interactive session cannot complete auth flow","subject_date":"2026-08-10"}}

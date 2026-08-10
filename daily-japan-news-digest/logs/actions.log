@@ -1,0 +1,34 @@
+{"ts":"2026-04-22T02:08:19+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-04-22","timestamp":"20260422-020819"}}
+{"ts":"2026-04-22T02:08:25+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:26+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":1,"status":200}}
+{"ts":"2026-04-22T02:08:27+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:28+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":3,"status":200}}
+{"ts":"2026-04-22T02:08:29+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","items":0,"status":200}}
+{"ts":"2026-04-22T02:08:31+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","items":0,"status":404}}
+{"ts":"2026-04-22T02:08:32+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":8,"status":200}}
+{"ts":"2026-04-22T02:08:33+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:34+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":5,"status":200}}
+{"ts":"2026-04-22T02:08:35+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":0,"status":200}}
+{"ts":"2026-04-22T02:08:36+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:37+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:38+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":5,"status":200}}
+{"ts":"2026-04-22T02:08:39+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":5,"status":200}}
+{"ts":"2026-04-22T02:08:40+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:41+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:42+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","items":0,"status":0}}
+{"ts":"2026-04-22T02:08:43+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","items":0,"status":0}}
+{"ts":"2026-04-22T02:08:44+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","items":0,"status":200}}
+{"ts":"2026-04-22T02:08:45+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:46+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"あたらしい経済","items":0,"status":503}}
+{"ts":"2026-04-22T02:08:47+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan","items":0,"status":503}}
+{"ts":"2026-04-22T02:09:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":0}}
+{"ts":"2026-04-22T02:09:05+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":4}}
+{"ts":"2026-04-22T02:09:10+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":5}}
+{"ts":"2026-04-22T02:09:15+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":5}}
+{"ts":"2026-04-22T02:09:20+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":5}}
+{"ts":"2026-04-22T02:09:25+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":0}}
+{"ts":"2026-04-22T02:09:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":0}}
+{"ts":"2026-04-22T02:09:35+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260422-020819.md","items_total":19}}
+{"ts":"2026-04-22T02:09:40+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"19c898f"}}
+{"ts":"2026-04-23T08:32:10+09:00","level":"INFO","action":"routine_end","detail":{"status":"interrupted","reason":"stream_idle_timeout","items_total":19,"email_sent":false,"output_md":"output/20260422-020819.md"}}

@@ -22,3 +22,4 @@
 {"ts":"2026-08-14T09:30:04+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":5}}
 {"ts":"2026-08-14T09:30:04+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":2}}
 {"ts":"2026-08-14T09:30:04+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260814-090958.md","items_total":56}}
+{"ts":"2026-08-14T09:31:34+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":1296,"status":"partial_success","items_total":56,"errors_count":11}}

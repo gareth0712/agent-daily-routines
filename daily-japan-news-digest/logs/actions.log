@@ -1,0 +1,28 @@
+{"ts":"2026-08-24T09:07:32+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-08-24","timestamp":"20260824-090732"}}
+{"ts":"2026-08-24T09:08:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":5,"status":200}}
+{"ts":"2026-08-24T09:08:01+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":0,"status":200,"note":"latest item from 2026-08-20, outside 24h window"}}
+{"ts":"2026-08-24T09:08:02+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","items":0,"status":200,"note":"latest item from 2026-08-21, outside 24h window"}}
+{"ts":"2026-08-24T09:08:03+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":0,"status":200,"note":"latest item from 2026-08-21, outside 24h window"}}
+{"ts":"2026-08-24T09:08:04+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google Research Blog","items":0,"status":200,"note":"no recent items"}}
+{"ts":"2026-08-24T09:08:05+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":5,"status":200}}
+{"ts":"2026-08-24T09:08:06+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":5,"status":200}}
+{"ts":"2026-08-24T09:08:07+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":5,"status":200}}
+{"ts":"2026-08-24T09:08:08+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":4,"status":200}}
+{"ts":"2026-08-24T09:08:09+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":4,"status":200}}
+{"ts":"2026-08-24T09:08:10+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":3,"status":200}}
+{"ts":"2026-08-24T09:08:11+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":5,"status":200}}
+{"ts":"2026-08-24T09:08:12+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":5,"status":200}}
+{"ts":"2026-08-24T09:08:13+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":5,"status":200}}
+{"ts":"2026-08-24T09:08:14+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","items":0,"status":200,"note":"feed has no pubDate field, cannot filter by 24h"}}
+{"ts":"2026-08-24T09:08:15+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","items":0,"status":200,"note":"feed last updated 2024-04, no recent items"}}
+{"ts":"2026-08-24T09:08:16+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"あたらしい経済","items":0,"status":200,"note":"latest items from 2026-08-21, outside 24h window"}}
+{"ts":"2026-08-24T09:08:30+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":5}}
+{"ts":"2026-08-24T09:08:31+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":0}}
+{"ts":"2026-08-24T09:08:32+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":5}}
+{"ts":"2026-08-24T09:08:33+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":8}}
+{"ts":"2026-08-24T09:08:34+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":8}}
+{"ts":"2026-08-24T09:08:35+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":0}}
+{"ts":"2026-08-24T09:08:36+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":0}}
+{"ts":"2026-08-24T09:09:15+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260824-090732.md","items_total":26}}
+{"ts":"2026-08-24T09:09:30+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"2adedbf"}}
+{"ts":"2026-08-24T09:09:50+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":138,"status":"partial_success","items_total":26,"errors_count":7}}

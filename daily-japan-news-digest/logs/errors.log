@@ -1,0 +1,8 @@
+{"ts":"2026-09-01T09:11:26+09:00","level":"ERROR","action":"fetch_rss","detail":{"source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","status":403,"message":"HTTP 403 Forbidden"}}
+{"ts":"2026-09-01T09:11:26+09:00","level":"ERROR","action":"fetch_rss","detail":{"source":"Ledge.ai","url":"https://ledge.ai/feed","status":404,"message":"HTTP 404 Not Found"}}
+{"ts":"2026-09-01T09:11:26+09:00","level":"ERROR","action":"fetch_rss","detail":{"source":"AI Shift Tech Blog","url":"https://www.ai-shift.co.jp/techblog/feed","status":404,"message":"HTTP 404 Not Found"}}
+{"ts":"2026-09-01T09:11:26+09:00","level":"ERROR","action":"fetch_rss","detail":{"source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","status":0,"message":"Fetch blocked by host restriction"}}
+{"ts":"2026-09-01T09:11:26+09:00","level":"ERROR","action":"fetch_rss","detail":{"source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","status":0,"message":"Fetch blocked by host restriction"}}
+{"ts":"2026-09-01T09:11:26+09:00","level":"WARN","action":"fetch_rss","detail":{"source":"CoinDesk Japan","url":"https://www.coindeskjapan.com/feed/","status":301,"message":"Redirected to https://www.nadanews.com/feed/ - domain likely transferred"}}
+{"ts":"2026-09-01T09:11:26+09:00","level":"WARN","action":"fetch_rss","detail":{"source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","status":200,"message":"Feed lacks pubDate fields; date filtering not possible, included 5 latest items"}}
+{"ts":"2026-09-01T09:24:45+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail connector requires OAuth authentication - unavailable in scheduled non-interactive session","subject_date":"2026-09-01"}}

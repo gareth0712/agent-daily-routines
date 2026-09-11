@@ -1,0 +1,8 @@
+{"ts":"2026-09-11T09:05:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-09-11T09:05:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-09-11T09:05:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"AI Shift Tech Blog","url":"https://www.ai-shift.co.jp/techblog/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-09-11T09:05:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"host unreachable from agent proxy"}}
+{"ts":"2026-09-11T09:05:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"host unreachable from agent proxy"}}
+{"ts":"2026-09-11T09:05:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","error":"feed returned no pubDate fields, cannot filter by time"}}
+{"ts":"2026-09-11T09:05:40+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan","url":"https://www.coindeskjapan.com/feed/","error":"domain redirected to unrelated host nadanews.com (301), skipped"}}
+{"ts":"2026-09-11T09:19:46+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP token expired; re-authorization required in interactive session","subject_date":"2026-09-11"}}

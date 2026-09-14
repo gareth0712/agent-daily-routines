@@ -3758,3 +3758,28 @@
 {"ts":"2026-09-13T09:04:40+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260913-090440.md","items_total":28}}
 {"ts":"2026-09-13T09:04:40+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"d28703b"}}
 {"ts":"2026-09-13T09:12:48+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":375,"status":"partial_success","items_total":28,"errors_count":7}}
+{"ts":"2026-09-14T09:05:43+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-09-14","timestamp":"20260914-090543"}}
+{"ts":"2026-09-14T09:06:00+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"claude_code","source":"Zenn - Claude Code","items":3,"status":200}}
+{"ts":"2026-09-14T09:06:05+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"OpenAI Blog","items":1,"status":200}}
+{"ts":"2026-09-14T09:06:08+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Google DeepMind Blog","items":0,"status":302}}
+{"ts":"2026-09-14T09:06:12+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Blog","items":0,"status":200}}
+{"ts":"2026-09-14T09:06:20+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_ai","source":"ITmedia AI+","items":3,"status":200}}
+{"ts":"2026-09-14T09:06:30+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - AI","items":5,"status":200}}
+{"ts":"2026-09-14T09:06:32+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Zenn - 機械学習","items":1,"status":200}}
+{"ts":"2026-09-14T09:06:35+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - LLM","items":4,"status":200}}
+{"ts":"2026-09-14T09:06:37+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_dev_community","source":"Qiita - 機械学習","items":4,"status":200}}
+{"ts":"2026-09-14T09:06:40+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia NEWS","items":2,"status":200}}
+{"ts":"2026-09-14T09:06:42+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"ITmedia ビジネス","items":5,"status":200}}
+{"ts":"2026-09-14T09:06:45+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"Engadget","items":5,"status":200}}
+{"ts":"2026-09-14T09:06:48+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_tech","source":"TechCrunch","items":5,"status":200}}
+{"ts":"2026-09-14T09:06:52+09:00","level":"INFO","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan (via nadanews.com)","items":5,"status":200}}
+{"ts":"2026-09-14T09:07:00+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":3}}
+{"ts":"2026-09-14T09:07:05+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":1}}
+{"ts":"2026-09-14T09:07:10+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":3}}
+{"ts":"2026-09-14T09:07:15+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":10}}
+{"ts":"2026-09-14T09:07:20+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":12}}
+{"ts":"2026-09-14T09:07:22+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":0}}
+{"ts":"2026-09-14T09:07:25+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":5}}
+{"ts":"2026-09-14T09:07:30+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20260914-090543.md","items_total":34}}
+{"ts":"2026-09-14T09:07:40+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"1b12f84"}}
+{"ts":"2026-09-14T09:08:10+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":147,"status":"partial_success","items_total":34,"errors_count":11}}

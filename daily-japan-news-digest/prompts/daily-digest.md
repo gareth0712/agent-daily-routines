@@ -1,12 +1,12 @@
 // daily-japan-news-digest/prompts/daily-digest.md
 # Daily Japan News Digest — 執行指令
 
-**Model**: Sonnet (整個 routine 統一)
+**Model**: Sonnet（整個 routine 統一）
 **預期執行時長**: 5–10 分鐘
-**預期輸出**: 1 個 MD 檔 + 2 個 commit + 1 個 push
+**預期輸出**: 1 個 MD 檔 + 2 個 commit + 1 封 email + 1 個 push
 
-> ⚠️ Gmail 發送由獨立的 `broadcast-digest.md` routine 負責（10 分鐘後執行）。
-> 本 routine 只負責：抓取 → 摘要 → 寫檔 → commit → push。PR 由 Routine 平台自動建立。
+> Gmail 由本 routine 直接寄送；`broadcast-digest.md` 只是補寄工具（今日 email 缺失時手動/選用執行）。
+> 抓取 → 摘要 → 寫檔 → commit → Gmail → commit → push `main`（不開 PR）。
 
 ---
 
@@ -20,6 +20,8 @@ ISO_JST=$(TZ=Asia/Tokyo date -Iseconds)            # 2026-04-22T07:00:15+09:00
 BRANCH=$(git branch --show-current)               # claude/xxx 或 main
 ```
 
+收件者從環境變數 `MY_EMAIL` 讀取（`printenv MY_EMAIL`）。允許把值當作 Gmail tool 的參數傳入，但**絕對禁止**寫進任何檔案、log、commit message。
+
 ---
 
 ## 步驟 1：初始化 Log
@@ -31,38 +33,48 @@ Append 到 `logs/actions.log`：
 
 ## 步驟 2：讀取 sources.json
 
-用 Read 工具載入 `sources.json`。解析 `categories` 欄位。
+用 Read 工具載入 `sources.json`。解析 `categories` 欄位。以 `sources.json` 為準（分類數與 source 數不再硬編碼於本檔）。
 
-## 步驟 3：抓取 RSS（對每個 category 的每個 source）
+## 步驟 3：抓取 RSS（`fetch_feeds.py`）
 
-**迴圈**：遍歷 7 個分類、共 22 個 sources。
-
-每個 source：
-1. `WebFetch(source.url)` 取 RSS XML
-2. 解析 XML，取 `<item>` 清單
-3. 過濾 `<pubDate>` 在過去 `meta.lookbackHours` (24) 小時內
-4. 每 source 最多取 `meta.maxItemsPerSource` (5) 條
-
-**成功** → `actions.log`:
-```json
-{"ts":"<ISO>","level":"INFO","action":"fetch_rss","detail":{"category":"<key>","source":"<name>","items":<n>,"status":200}}
+**優先路徑**：執行決定性抓取腳本，它會自己寫 `fetch_rss` log（**不要重複記錄**）：
+```bash
+python3 daily-japan-news-digest/scripts/fetch_feeds.py \
+  --sources daily-japan-news-digest/sources.json \
+  --out /tmp/digest-items.json
 ```
+執行完後：
+1. 把 stdout 的 per-source 摘要表完整貼進 transcript。
+2. 用 Read 工具讀取 `/tmp/digest-items.json`，取得每個分類的 `items`（已依新→舊排序、已套用 `maxItemsPerSource` / `maxTotalItemsPerCategory`）。
 
-**失敗**（timeout / 404 / 解析錯誤）→ `errors.log`:
-```json
-{"ts":"<ISO>","level":"ERROR","action":"fetch_rss","detail":{"category":"<key>","source":"<name>","url":"<url>","error":"<message>"}}
-```
-→ **繼續下一個 source，絕不中止整體流程**。
+**Log 語意對照表**（供判讀摘要表與 log 用）：
+
+| Log | 意義 | 需要處理嗎 |
+|---|---|---|
+| INFO `items:0`, `status:200` | feed 存活，只是 24h 內無新文章 | 不是錯誤，略過即可 |
+| WARN `stale_feed` | feed 最新一篇已超過 `staleFeedDays`（預設 7 天），此來源可能已死 | 在完成報告中提一下，供人工檢查 |
+| ERROR `network_policy` | Routine 環境的網路白名單擋下此 host | 請使用者把該 host 加入環境的 allowed domains |
+| ERROR `http_4xx` / `http_5xx` | 來源本身的問題（404/403/500…） | 跳過即可，不必處理 |
+
+**Fallback 路徑**（僅當 `python3` 不存在，或腳本本身 crash——非 exit code 2 的非零結束碼）：退回逐一 `WebFetch(source.url)` + 手動解析 + 手動記錄 `fetch_rss` log，規則同舊版：
+
+- 過濾 `<pubDate>` 在過去 `meta.lookbackHours` 小時內，每 source 最多取 `meta.maxItemsPerSource` 條
+- 成功 → `actions.log`：`{"ts":"<ISO>","level":"INFO","action":"fetch_rss","detail":{"category":"<key>","source":"<name>","items":<n>,"status":200}}`
+- 失敗（timeout / 404 / 解析錯誤）→ `errors.log`：`{"ts":"<ISO>","level":"ERROR","action":"fetch_rss","detail":{"category":"<key>","source":"<name>","url":"<url>","error":"<message>"}}`
+- 繼續下一個 source，絕不中止整體流程
 
 ## 步驟 4：過濾與摘要（對每個分類）
 
 ### 4a. 每分類總量控制
-合併該分類所有 source 的文章後，按時間排序，取前 `meta.maxTotalItemsPerCategory` (15) 條。
+若走 `fetch_feeds.py` 路徑，`/tmp/digest-items.json` 已完成排序與總量控制（`meta.maxTotalItemsPerCategory`），可直接使用。Fallback 路徑則自行合併排序後取前 N 條。
 
 ### 4b. 抓正文 + 摘要
 
 對每篇：
-1. `WebFetch(item.link)` 取正文
+1. `WebFetch(item.link)` 取正文；失敗則改用 `/tmp/digest-items.json` 內該 item 的 `title` + `summary`（feed description 純文字節錄，最多 500 字）摘要，並記 WARN（非 ERROR）：
+   ```json
+   {"ts":"<ISO>","level":"WARN","action":"fetch_article","detail":{"category":"<key>","link":"<url>","error":"<message>"}}
+   ```
 2. 依 `category.summaryDepth` 產生繁體中文摘要：
 
 | summaryDepth | 每條摘要 | 特殊處理 |
@@ -243,16 +255,69 @@ SHA_1=$(git rev-parse --short HEAD)
 {"ts":"<ISO>","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"<SHA_1>"}}
 ```
 
-## 步驟 7：結束 Log
+## 步驟 7：寄 Gmail
+
+### 7a. MD 轉 HTML Email Body
+
+- 最外層容器：`<div style="max-width:600px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.6;">`
+- **🤖 Claude Code 區塊**（置頂）：`<section style="background:#EBF5FF;border-radius:8px;padding:16px;margin-bottom:24px;">` + `<h2 style="color:#0066CC;margin-top:0;">`
+- 其他分類：`<section style="margin-bottom:24px;">`
+- 分類間分隔線：`<hr style="border:0;border-top:1px solid #E5E7EB;margin:24px 0;">`
+- 文章標題：`<h3 style="margin-bottom:4px;">`
+- 文章連結：一律加 `target="_blank" rel="noopener noreferrer"`
+- 來源與時間（斜體行）：`<p style="color:#6B7280;font-size:14px;margin:2px 0 8px;">`
+- `> 本日無更新` → `<blockquote style="color:#9CA3AF;border-left:3px solid #E5E7EB;padding-left:12px;">本日無更新</blockquote>`
+- `📌 今日值得注意` 區塊：`<section style="background:#FEF9C3;border-radius:8px;padding:16px;">`
+- 底部署名行：`<p style="color:#9CA3AF;font-size:12px;text-align:center;margin-top:32px;">`
+
+### 7b. 發送
+
+```bash
+RECIPIENT=$(printenv MY_EMAIL)
+```
+
+- **`RECIPIENT` 為空** → `errors.log` 記錄並跳過本步驟：
+  ```json
+  {"ts":"<ISO>","level":"ERROR","action":"send_email","detail":{"error":"MY_EMAIL not set","subject_date":"<DATE_JST>"}}
+  ```
+- **`RECIPIENT` 有值** → 呼叫 `mcp__Gmail__send_message`：
+
+  | 欄位 | 值 |
+  |---|---|
+  | `to` | `["<RECIPIENT 的字面值>"]`（⚠️ 必須是解析後的字面地址；工具**不會**展開 `$MY_EMAIL` 這種字串，2026-05 曾因此寄送失敗） |
+  | `subject` | `📰 Daily Digest <DATE_JST>` |
+  | `htmlBody` | 7a 產出的 HTML |
+  | `body` | MD 內容前 ~2000 字的純文字版，作為 fallback |
+
+**成功** → `actions.log`：
+```json
+{"ts":"<ISO>","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"sent","subject_date":"<DATE_JST>"}}
+```
+
+**`mcp__Gmail__send_message` 不可用，但 `mcp__Gmail__create_draft` 可用** → 改建草稿並記錄：
+```json
+{"ts":"<ISO>","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"draft_created","draft_id":"<id>","subject_date":"<DATE_JST>"}}
+```
+
+**Gmail server 缺失 / 認證錯誤** → `errors.log`：
+```json
+{"ts":"<ISO>","level":"ERROR","action":"send_email","detail":{"error":"<class>: <message>","subject_date":"<DATE_JST>"}}
+```
+`<class>` 為 `not_connected` / `auth` / `quota` / `other` 之一。記錄後繼續下一步（MD 已存，可用 `broadcast-digest` 補寄）。
+
+⚠️ `recipient` 欄位**一律寫 `<redacted>`**，不可寫真實 email。
+
+## 步驟 8：結束 Log
 
 計算執行時間（routine_start 到現在秒數）：
 ```json
-{"ts":"<ISO>","level":"INFO","action":"routine_end","detail":{"duration_seconds":<n>,"status":"success","items_total":<N>,"errors_count":<errors.log 行數>,"broadcast_pending":true}}
+{"ts":"<ISO>","level":"INFO","action":"routine_end","detail":{"duration_seconds":<n>,"status":"success","items_total":<N>,"errors_count":<errors.log 行數>,"email_sent":true}}
 ```
 
+若 email 未成功寄出（含 draft_created 以外的失敗），`email_sent` 改為 `false`。
 若 errors.log 有任何 ERROR 行，`status` 改為 `"partial_success"`。
 
-## 步驟 8：Git Commit #2（Logs）
+## 步驟 9：Git Commit #2（Logs）
 
 ```bash
 git add daily-japan-news-digest/logs/
@@ -260,14 +325,42 @@ git commit -m "chore(japan-news): logs for <DATE_JST>"
 SHA_2=$(git rev-parse --short HEAD)
 ```
 
-## 步驟 9：Git Push
+## 步驟 10：Git Push（到 `main`）
 
+本 routine 已獲 repo owner 明確授權直接 push `main`（見 root `CLAUDE.md` Git Commit 規範）。目標是讓本次產出落在 `main`，`output/` 在 `main` 上即為正式版本。
+
+```bash
+git fetch origin main
+git rebase origin/main
+```
+
+`.gitattributes` 已將 `logs/*.log` 標為 `merge=union`，同時間多個 log append 不會衝突；若 rebase 仍卡住：
+```bash
+git rebase --abort
+```
+並記錄 ERROR：
+```json
+{"ts":"<ISO>","level":"ERROR","action":"git_rebase","detail":{"error":"<message>"}}
+```
+
+Rebase（或 abort）完成後：
+```bash
+git push origin HEAD:main
+```
+
+**push 成功** → 記錄（此行不會被 commit，與舊版行為相同）：
+```json
+{"ts":"<ISO>","level":"INFO","action":"git_push","detail":{"branch":"main","sha":"<SHA_2>"}}
+```
+routine 正常結束。
+
+**push 被拒**（protected branch / 權限問題）→ 寫 WARN 並改 push 到自己的分支，確保工作不遺失，然後 exit 1 讓 Routine 標記失敗、提醒人工處理：
+```json
+{"ts":"<ISO>","level":"WARN","action":"git_push","detail":{"error":"<message>","fallback":"branch"}}
+```
 ```bash
 git push -u origin <BRANCH>
 ```
-
-**push 成功**：routine 正常結束。
-**push 失敗**：寫 errors.log，exit 1 讓 Routine 標記失敗。
 
 ---
 
@@ -276,11 +369,14 @@ git push -u origin <BRANCH>
 | 失敗點 | 處理方式 | 是否中止 |
 |---|---|---|
 | 單一 RSS fetch 失敗 | 記 errors.log，跳過 | ❌ 繼續 |
-| 某篇文章正文 fetch 失敗 | 記 errors.log，該篇跳過 | ❌ 繼續 |
+| `fetch_feeds.py` crash（非 exit 2） | 記錄後改用逐一 `WebFetch` fallback | ❌ 繼續 |
+| 某篇文章正文 fetch 失敗 | 記 WARN `fetch_article`，改用 feed 摘要 | ❌ 繼續 |
 | 整個分類無文章 | MD 顯示「本日無更新」 | ❌ 繼續 |
 | 寫 output MD 失敗 | 記 errors.log，exit 1 | ✅ 中止 |
 | Git commit 失敗 | 記 errors.log，exit 1 | ✅ 中止 |
-| Git push 失敗 | 記 errors.log，exit 1 | ✅ 中止 |
+| Gmail 發送失敗 | 記 errors.log ❌ 繼續，MD 已存，可用 broadcast-digest 補寄 | ❌ 繼續 |
+| push `main` 被拒 | push 到分支 + exit 1 | ✅ 中止（並標記失敗） |
+| Git push（分支 fallback）也失敗 | 記 errors.log，exit 1 | ✅ 中止 |
 
 ---
 
@@ -289,7 +385,7 @@ git push -u origin <BRANCH>
 執行結束前，Claude **必須**自我檢查：
 
 - [ ] `output/<TIMESTAMP>.md` 無任何 email 地址（`grep @` 應 0 行）
-- [ ] `logs/actions.log` 無真實 email
+- [ ] `logs/actions.log` 無真實 email（`recipient` 欄位一律為 `<redacted>`）
 - [ ] `logs/errors.log` 無真實 email
 - [ ] Commit messages 無 email / secrets
 - [ ] `sources.json` 保持原樣，未被修改

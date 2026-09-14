@@ -3,6 +3,7 @@
         "lookbackHours": 24,
         "maxItemsPerSource": 5,
         "maxTotalItemsPerCategory": 15,
+        "staleFeedDays": 7,
         "priorityCategories": [
             "claude_code",
             "us_ai_labs",
@@ -19,6 +20,21 @@
                     "name": "Zenn - Claude Code",
                     "url": "https://zenn.dev/topics/claudecode/feed",
                     "lang": "ja"
+                },
+                {
+                    "name": "Zenn - Claude",
+                    "url": "https://zenn.dev/topics/claude/feed",
+                    "lang": "ja"
+                },
+                {
+                    "name": "Qiita - ClaudeCode",
+                    "url": "https://qiita.com/tags/claudecode/feed",
+                    "lang": "ja"
+                },
+                {
+                    "name": "note - #ClaudeCode",
+                    "url": "https://note.com/hashtag/ClaudeCode/rss",
+                    "lang": "ja"
                 }
             ]
         },
@@ -29,12 +45,12 @@
             "sources": [
                 {
                     "name": "OpenAI Blog",
-                    "url": "https://openai.com/blog/rss.xml",
+                    "url": "https://openai.com/news/rss.xml",
                     "lang": "en"
                 },
                 {
                     "name": "Google DeepMind Blog",
-                    "url": "https://deepmind.com/blog/feed/basic/",
+                    "url": "https://deepmind.google/blog/rss.xml",
                     "lang": "en"
                 },
                 {
@@ -43,13 +59,13 @@
                     "lang": "en"
                 },
                 {
-                    "name": "Hugging Face Daily Papers",
-                    "url": "https://rsshub.app/huggingface/daily-papers",
+                    "name": "Hugging Face Daily Papers (takara.ai mirror)",
+                    "url": "https://papers.takara.ai/api/feed",
                     "lang": "en"
                 },
                 {
                     "name": "Google Research Blog",
-                    "url": "https://feeds.feedburner.com/blogspot/gJZg",
+                    "url": "https://research.google/blog/rss/",
                     "lang": "en"
                 }
             ]
@@ -60,8 +76,8 @@
             "summaryDepth": "standard",
             "sources": [
                 {
-                    "name": "Ledge.ai",
-                    "url": "https://ledge.ai/feed",
+                    "name": "AINOW",
+                    "url": "https://ainow.ai/feed/",
                     "lang": "ja"
                 },
                 {
@@ -70,8 +86,8 @@
                     "lang": "ja"
                 },
                 {
-                    "name": "AI Shift Tech Blog",
-                    "url": "https://www.ai-shift.co.jp/techblog/feed",
+                    "name": "CyberAgent Developers Blog",
+                    "url": "https://developers.cyberagent.co.jp/blog/feed/",
                     "lang": "ja"
                 }
             ]
@@ -137,17 +153,17 @@
             "sources": [
                 {
                     "name": "NHK 主要ニュース",
-                    "url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+                    "url": "https://news.web.nhk/n-data/conf/na/rss/cat0.xml",
                     "lang": "ja"
                 },
                 {
-                    "name": "朝日新聞 デジタル",
-                    "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+                    "name": "毎日新聞 速報",
+                    "url": "https://mainichi.jp/rss/etc/mainichi-flash.rss",
                     "lang": "ja"
                 },
                 {
-                    "name": "Nikkei Asia",
-                    "url": "https://asia.nikkei.com/rss/feed/nar",
+                    "name": "The Japan Times",
+                    "url": "https://www.japantimes.co.jp/feed/",
                     "lang": "en"
                 }
             ]
@@ -159,7 +175,7 @@
             "sources": [
                 {
                     "name": "CoinPost",
-                    "url": "https://coinpost.jp/rss.xml",
+                    "url": "https://coinpost.jp/?feed=rss2",
                     "lang": "ja"
                 },
                 {
@@ -168,8 +184,8 @@
                     "lang": "ja"
                 },
                 {
-                    "name": "CoinDesk Japan",
-                    "url": "https://www.coindeskjapan.com/feed/",
+                    "name": "NADA News（前 CoinDesk Japan）",
+                    "url": "https://www.nadanews.com/feed/",
                     "lang": "ja"
                 }
             ]

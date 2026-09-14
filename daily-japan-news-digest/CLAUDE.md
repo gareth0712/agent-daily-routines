@@ -1,25 +1,32 @@
 // daily-japan-news-digest/CLAUDE.md
 # Daily Japan News Digest
 
-每天自動執行兩個連續 Routine，抓取日本 7 類新聞，產出繁體中文摘要 MD，並以 Gmail 廣播。
+每天自動執行 `daily-digest`，抓取日本 7 類新聞，產出繁體中文摘要 MD，並在同一次執行內以 Gmail 廣播。`broadcast-digest` 為選用補寄工具，不在預設排程內。
 
 ## Routine 排程
 
 | Routine | 時間 (JST) | 入口 | 職責 |
 |---|---|---|---|
-| `daily-digest` | 07:00 | `prompts/daily-digest.md` | 抓取 RSS → 摘要 → 寫 MD → commit → PR → merge |
-| `broadcast-digest` | 07:10 | `prompts/broadcast-digest.md` | 讀今日 MD → 轉 HTML → 寄 Gmail → commit → PR → merge |
-
-兩個 Routine 分開執行，避免單一 session 因工作量過大而 timeout。
+| `daily-digest` | 07:00（每日排程） | `prompts/daily-digest.md` | 抓取 RSS → 摘要 → 寫 MD → commit → Gmail → commit → push `main` |
+| `broadcast-digest` | 選用／補寄（不排程） | `prompts/broadcast-digest.md` | 僅在當日 `send_email` 缺失時手動觸發：讀今日 MD → 轉 HTML → 寄 Gmail → commit → push `main` |
 
 ## 執行入口
 
 - **daily-digest**：讀取並完整執行 `prompts/daily-digest.md`
-- **broadcast-digest**：讀取並完整執行 `prompts/broadcast-digest.md`
+- **broadcast-digest**：讀取並完整執行 `prompts/broadcast-digest.md`（僅補寄時使用）
+
+## 抓取機制
+
+RSS 抓取由 `scripts/fetch_feeds.py` 決定性執行（非 LLM WebFetch 迴圈），同時寫入 zero-trust log。Log 語意：
+
+- INFO `items:0`、`status:200` → feed 存活，只是 24h 內無新文章，非錯誤
+- WARN `stale_feed` → feed 最新文章超過 `meta.staleFeedDays`（預設 7 天），來源可能已死，需人工檢查
+- ERROR `network_policy` → Routine 環境的網路白名單擋下該 host，需把 host 加入 allowed domains
+- ERROR `http_4xx` / `http_5xx` → 來源本身問題，跳過即可
 
 ## 環境變數（Routine secrets 注入）
 
-- `MY_EMAIL` — 收件信箱（僅 broadcast-digest 使用）
+- `MY_EMAIL` — 收件信箱（daily-digest 與 broadcast-digest 皆使用）
 
 ## 分類（7 類）
 
@@ -35,10 +42,11 @@
 
 ### daily-digest
 - `output/YYYYMMDD-HHMMSS.md` 已產生
+- Gmail 已寄出（或已記錄失敗，見 errors.log）
 - 兩個 commit 已建立（output + logs）
-- `git push` 成功（PR 由 Routine 平台自動建立）
+- 已 push 到 `main`
 
-### broadcast-digest
+### broadcast-digest（僅補寄時適用）
 - Gmail 已寄出（或已記錄 email 失敗）
 - broadcast log commit 已建立
-- `git push` 成功（PR 由 Routine 平台自動建立）
+- 已 push 到 `main`

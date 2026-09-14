@@ -1,0 +1,2 @@
+# append-only JSON Lines logs: concatenate both sides instead of conflicting
+daily-japan-news-digest/logs/*.log merge=union

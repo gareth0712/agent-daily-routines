@@ -530,3 +530,8 @@
 {"ts":"2026-07-09T09:07:58+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinPost","url":"https://coinpost.jp/rss.xml","error":"feed content is from 2024; no items within 24h window"}}
 {"ts":"2026-07-09T09:08:01+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_crypto","source":"CoinDesk Japan","url":"https://www.coindeskjapan.com/feed/","error":"301 redirect to unexpected host nadanews.com; skipped for security"}}
 {"ts":"2026-07-09T09:09:45+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP server requires OAuth authentication; not available in non-interactive session","subject_date":"2026-07-09"}}
+{"ts":"2026-07-10T09:15:33+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-07-10T09:15:39+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-07-10T09:15:50+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"Unable to fetch: domain blocked"}}
+{"ts":"2026-07-10T09:15:51+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Unable to fetch: domain blocked"}}
+{"ts":"2026-07-10T09:25:15+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP server requires OAuth authentication; not available in non-interactive session","subject_date":"2026-07-10"}}

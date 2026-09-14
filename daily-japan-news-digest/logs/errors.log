@@ -439,3 +439,8 @@
 {"ts":"2026-06-26T09:07:10+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"Access blocked by proxy"}}
 {"ts":"2026-06-26T09:07:10+09:00","level":"WARN","action":"fetch_rss","detail":{"category":"japan_general","source":"Nikkei Asia","url":"https://asia.nikkei.com/rss/feed/nar","error":"RSS feed lacks pubDate metadata, cannot filter items by 24h time window"}}
 {"ts":"2026-06-26T09:12:00+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP server tools not available in this session","subject_date":"2026-06-26"}}
+{"ts":"2026-06-27T09:07:09+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"us_ai_labs","source":"Hugging Face Daily Papers","url":"https://rsshub.app/huggingface/daily-papers","error":"HTTP 403 Forbidden"}}
+{"ts":"2026-06-27T09:07:12+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_ai","source":"Ledge.ai","url":"https://ledge.ai/feed","error":"HTTP 404 Not Found"}}
+{"ts":"2026-06-27T09:07:30+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"NHK 主要ニュース","url":"https://www.nhk.or.jp/rss/news/cat0.xml","error":"unable to fetch: access denied"}}
+{"ts":"2026-06-27T09:07:31+09:00","level":"ERROR","action":"fetch_rss","detail":{"category":"japan_general","source":"朝日新聞 デジタル","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","error":"unable to fetch: access denied"}}
+{"ts":"2026-06-27T09:09:30+09:00","level":"ERROR","action":"send_email","detail":{"error":"Gmail MCP connector not available in this execution environment","subject_date":"2026-06-27"}}

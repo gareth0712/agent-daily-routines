@@ -24,9 +24,9 @@ RSS 抓取由 `scripts/fetch_feeds.py` 決定性執行（非 LLM WebFetch 迴圈
 - ERROR `network_policy` → Routine 環境的網路白名單擋下該 host，需把 host 加入 allowed domains
 - ERROR `http_4xx` / `http_5xx` → 來源本身問題，跳過即可
 
-## 環境變數（Routine secrets 注入）
+## 收件者
 
-- `MY_EMAIL` — 收件信箱（daily-digest 與 broadcast-digest 皆使用）
+寄給自己：session context 的 `userEmail`（Gmail connector 登入帳號）。環境變數 `MY_EMAIL` 為選用覆寫，未設定即略過。地址只能當 Gmail tool 參數，不得寫入任何檔案。
 
 ## 分類（7 類）
 

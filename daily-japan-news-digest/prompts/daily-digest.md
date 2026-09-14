@@ -20,7 +20,11 @@ ISO_JST=$(TZ=Asia/Tokyo date -Iseconds)            # 2026-04-22T07:00:15+09:00
 BRANCH=$(git branch --show-current)               # claude/xxx 或 main
 ```
 
-收件者從環境變數 `MY_EMAIL` 讀取（`printenv MY_EMAIL`）。允許把值當作 Gmail tool 的參數傳入，但**絕對禁止**寫進任何檔案、log、commit message。
+收件者 = **你自己**（Gmail connector 登入的帳號）。地址取得順序：
+1. Session context 提供的使用者 email（Claude Code 每個 session 的 system context 都帶 `userEmail`）
+2. 環境變數 `MY_EMAIL`（`printenv MY_EMAIL`，選用覆寫，未設定就略過）
+
+兩者皆無 → 寄信步驟記 ERROR `recipient_unavailable` 並跳過。允許把地址當作 Gmail tool 的參數傳入，但**絕對禁止**寫進任何檔案、log、commit message。
 
 ---
 
@@ -273,18 +277,18 @@ SHA_1=$(git rev-parse --short HEAD)
 ### 7b. 發送
 
 ```bash
-RECIPIENT=$(printenv MY_EMAIL)
+RECIPIENT=$(printenv MY_EMAIL)   # 選用覆寫；為空則改用 session context 的 userEmail
 ```
 
-- **`RECIPIENT` 為空** → `errors.log` 記錄並跳過本步驟：
+- **兩者皆無** → `errors.log` 記錄並跳過本步驟：
   ```json
-  {"ts":"<ISO>","level":"ERROR","action":"send_email","detail":{"error":"MY_EMAIL not set","subject_date":"<DATE_JST>"}}
+  {"ts":"<ISO>","level":"ERROR","action":"send_email","detail":{"error":"recipient_unavailable: no userEmail in session context and MY_EMAIL unset","subject_date":"<DATE_JST>"}}
   ```
-- **`RECIPIENT` 有值** → 呼叫 `mcp__Gmail__send_message`：
+- **有地址** → 呼叫 `mcp__Gmail__send_message`：
 
   | 欄位 | 值 |
   |---|---|
-  | `to` | `["<RECIPIENT 的字面值>"]`（⚠️ 必須是解析後的字面地址；工具**不會**展開 `$MY_EMAIL` 這種字串，2026-05 曾因此寄送失敗） |
+  | `to` | `["<收件地址的字面值>"]`（⚠️ 必須是解析後的字面地址；工具**不會**展開 `$MY_EMAIL` 這種字串，2026-05 曾因此寄送失敗） |
   | `subject` | `📰 Daily Digest <DATE_JST>` |
   | `htmlBody` | 7a 產出的 HTML |
   | `body` | MD 內容前 ~2000 字的純文字版，作為 fallback |

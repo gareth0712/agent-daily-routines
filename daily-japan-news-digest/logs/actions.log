@@ -4046,3 +4046,5 @@
 {"ts":"2026-09-21T09:12:38+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"4304b47"}}
 {"ts":"2026-09-21T09:22:25+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"sent","subject_date":"2026-09-21"}}
 {"ts":"2026-09-21T09:22:25+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":1005,"status":"success","items_total":62,"errors_count":1125,"email_sent":true}}
+{"ts":"2026-09-21T09:22:28+09:00","level":"INFO","action":"git_push","detail":{"branch":"main","sha":"424b8f1"}}
+{"ts":"2026-09-21T09:22:56+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":1005,"status":"partial_success","items_total":62,"errors_count":1125,"email_sent":true,"note":"supersedes previous routine_end; status corrected because errors.log has 1 ERROR (fetch_rss NHK http_403) for this run"}}

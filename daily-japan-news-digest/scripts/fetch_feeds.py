@@ -26,7 +26,8 @@ RETRY_DELAY_S = 2
 SUMMARY_MAX_CHARS = 500
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
 DC_NS = "{http://purl.org/dc/elements/1.1/}"
-RDF_ITEM = "{http://purl.org/rss/1.0/}item"
+RSS1_NS = "{http://purl.org/rss/1.0/}"
+RDF_ITEM = f"{RSS1_NS}item"
 
 
 def now_jst_iso():
@@ -149,6 +150,8 @@ def extract_link(el):
         if l.get("href"):
             return l.get("href")
     link_el = el.find("link")
+    if link_el is None:
+        link_el = el.find(f"{RSS1_NS}link")
     if link_el is not None:
         if link_el.text and link_el.text.strip():
             return link_el.text.strip()
@@ -178,10 +181,10 @@ def parse_feed(body):
     root = ElementTree.fromstring(body)
     return [
         {
-            "title": field_text(el, "title", f"{ATOM_NS}title") or "(無標題)",
+            "title": field_text(el, "title", f"{ATOM_NS}title", f"{RSS1_NS}title") or "(無標題)",
             "link": extract_link(el) or "",
             "published_dt": extract_date(el),
-            "summary": strip_html(field_text(el, "description", f"{ATOM_NS}summary", f"{ATOM_NS}content", "{http://purl.org/rss/1.0/modules/content/}encoded")),
+            "summary": strip_html(field_text(el, "description", f"{RSS1_NS}description", f"{ATOM_NS}summary", f"{ATOM_NS}content", "{http://purl.org/rss/1.0/modules/content/}encoded")),
         }
         for el in extract_items(root)
     ]

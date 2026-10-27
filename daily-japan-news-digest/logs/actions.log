@@ -5441,3 +5441,5 @@
 {"ts":"2026-10-27T09:12:20+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"d71d737"}}
 {"ts":"2026-10-27T09:18:37+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"sent","subject_date":"2026-10-27","message_id":"1a17ab8d78cd0fce","recipient_source":"MY_EMAIL_override"}}
 {"ts":"2026-10-27T09:18:37+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":630,"status":"success","items_total":88,"errors_count":13,"email_sent":true}}
+{"ts":"2026-10-27T09:19:16+09:00","level":"INFO","action":"git_push","detail":{"branch":"main","sha":"a3e635d"}}
+{"ts":"2026-10-27T09:19:16+09:00","level":"INFO","action":"routine_end_correction","detail":{"errors_count":28,"errors_count_reported":13,"reason":"grep pattern missed subagent-written WARN lines with spaced JSON; all 28 are WARN (27 fetch_article + 1 htmlBody_compacted), 0 ERROR"}}

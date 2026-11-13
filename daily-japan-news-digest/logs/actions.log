@@ -6069,3 +6069,54 @@
 {"ts":"2026-11-12T09:19:10+09:00","level":"INFO","action":"security_check","detail":{"output_email_regex_matches":0,"output_raw_at_sign_lines":0,"logs_email_regex_matches":0,"sources_json_modified":false}}
 {"ts":"2026-11-12T09:19:10+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":652,"status":"success","items_total":83,"errors_count":1713,"errors_this_run":2,"error_level_this_run":0,"email_sent":true}}
 {"ts":"2026-11-12T09:19:29+09:00","level":"INFO","action":"git_push","detail":{"branch":"main","sha":"40a2078"}}
+{"ts":"2026-11-13T09:07:55+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-11-13","timestamp":"20261113-090755"}}
+{"ts": "2026-11-13T09:07:56+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "Zenn - Claude Code", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:56+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "Zenn - Claude", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:56+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Google DeepMind Blog", "items": 1, "status": 200}}
+{"ts": "2026-11-13T09:07:56+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Hugging Face Blog", "items": 1, "status": 200}}
+{"ts": "2026-11-13T09:07:56+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "Qiita - ClaudeCode", "items": 4, "status": 200}}
+{"ts": "2026-11-13T09:07:56+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "OpenAI Blog", "items": 3, "status": 200}}
+{"ts": "2026-11-13T09:07:56+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "note - #ClaudeCode", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Zenn - AI", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Google Research Blog", "items": 0, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Zenn - 機械学習", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Hugging Face Daily Papers (takara.ai mirror)", "items": 0, "status": 200, "url_effective": "https://l0m9dfhwc2c0qq2u.public.blob.vercel-storage.com/tldr-papers/2026-11-11.xml"}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Qiita - LLM", "items": 4, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_ai", "source": "ITmedia AI+", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Qiita - 機械学習", "items": 4, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "Engadget", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "TechCrunch", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:57+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_general", "source": "NHK 主要ニュース", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:58+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_ai", "source": "AINOW", "items": 0, "status": 200}}
+{"ts": "2026-11-13T09:07:58+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_ai", "source": "CyberAgent Developers Blog", "items": 0, "status": 200}}
+{"ts": "2026-11-13T09:07:58+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "ITmedia NEWS", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:58+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_general", "source": "The Japan Times", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:58+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "ITmedia ビジネス", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:58+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_general", "source": "毎日新聞 速報", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:59+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_crypto", "source": "あたらしい経済", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:07:59+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_crypto", "source": "NADA News（前 CoinDesk Japan）", "items": 5, "status": 200}}
+{"ts": "2026-11-13T09:08:01+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_crypto", "source": "CoinPost", "items": 5, "status": 200}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"us_ai_labs","link":"https://openai.com/business/customer-stories/amplitude","error":"http_403"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"us_ai_labs","link":"https://openai.com/business/customer-stories/gondola","error":"http_403"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"us_ai_labs","link":"https://openai.com/business/customer-stories/holidays-extras-codex","error":"http_403"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://mainichi.jp/articles/20261113/k00/00m/010/013000c","error":"webfetch_blocked_host"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://mainichi.jp/articles/20261112/k00/00m/040/088000c","error":"webfetch_blocked_host"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://mainichi.jp/articles/20261111/k00/00m/310/190000c","error":"webfetch_blocked_host"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://mainichi.jp/articles/20261113/k00/00m/040/008000c","error":"webfetch_blocked_host"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://mainichi.jp/articles/20261113/k00/00m/030/010000c","error":"webfetch_blocked_host"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://www.japantimes.co.jp/business/2026/11/13/companies/nvidia-huang-ousted/","error":"http_402"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://www.japantimes.co.jp/news/2026/11/12/japan/crime-legal/toyama-killings-death-penalty-sought/","error":"http_402"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://www.japantimes.co.jp/business/2026/11/12/softbank-apollo-open-ai-bet/","error":"http_402"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://www.japantimes.co.jp/news/2026/11/12/world/vance-buttigieg-us-presidential-hopefuls/","error":"http_402"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"WARN","action":"fetch_article","detail":{"category":"japan_general","link":"https://www.japantimes.co.jp/business/2026/11/12/muji-credit-card-leak/","error":"http_402"}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":14}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":5}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":5}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":12}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":14}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":15}}
+{"ts":"2026-11-13T09:11:13+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":14}}
+{"ts":"2026-11-13T09:16:59+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20261113-090755.md","items_total":79}}
+{"ts":"2026-11-13T09:16:59+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"2d2dbda"}}
+{"ts":"2026-11-13T09:23:27+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"sent","subject_date":"2026-11-13"}}
+{"ts":"2026-11-13T09:23:27+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":932,"status":"success","items_total":79,"errors_count":13,"email_sent":true}}

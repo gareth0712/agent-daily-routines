@@ -6432,3 +6432,41 @@
 {"ts":"2026-11-21T09:21:43+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"sent","subject_date":"2026-11-21"}}
 {"ts":"2026-11-21T09:21:43+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":809,"status":"success","items_total":82,"errors_count":1,"email_sent":true}}
 {"ts":"2026-11-21T09:21:54+09:00","level":"INFO","action":"git_push","detail":{"branch":"main","sha":"4766438"}}
+{"ts":"2026-11-22T09:08:11+09:00","level":"INFO","action":"routine_start","detail":{"date":"2026-11-22","timestamp":"20261122-090811"}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "Zenn - Claude", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "Zenn - Claude Code", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "OpenAI Blog", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Hugging Face Blog", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "Qiita - ClaudeCode", "items": 4, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Google DeepMind Blog", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "claude_code", "source": "note - #ClaudeCode", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Google Research Blog", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Zenn - AI", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Zenn - 機械学習", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:12+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "us_ai_labs", "source": "Hugging Face Daily Papers (takara.ai mirror)", "items": 0, "status": 200, "url_effective": "https://l0m9dfhwc2c0qq2u.public.blob.vercel-storage.com/tldr-papers/2026-11-21.xml"}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_ai", "source": "ITmedia AI+", "items": 3, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Qiita - LLM", "items": 4, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_dev_community", "source": "Qiita - 機械学習", "items": 3, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "Engadget", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "TechCrunch", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_general", "source": "毎日新聞 速報", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_general", "source": "NHK 主要ニュース", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_ai", "source": "AINOW", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "ITmedia NEWS", "items": 2, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_tech", "source": "ITmedia ビジネス", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_general", "source": "The Japan Times", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:13+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_ai", "source": "CyberAgent Developers Blog", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:14+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_crypto", "source": "あたらしい経済", "items": 0, "status": 200}}
+{"ts": "2026-11-22T09:08:14+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_crypto", "source": "NADA News（前 CoinDesk Japan）", "items": 5, "status": 200}}
+{"ts": "2026-11-22T09:08:15+09:00", "level": "INFO", "action": "fetch_rss", "detail": {"category": "japan_crypto", "source": "CoinPost", "items": 3, "status": 200}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"claude_code","items_summarized":15}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"us_ai_labs","items_summarized":0}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_ai","items_summarized":3}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_dev_community","items_summarized":15}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_tech","items_summarized":12}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_crypto","items_summarized":8}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"summarize_category","detail":{"category":"japan_general","items_summarized":15}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"write_output","detail":{"path":"output/20261122-090811.md","items_total":68}}
+{"ts":"2026-11-22T09:12:03+09:00","level":"INFO","action":"git_commit","detail":{"step":"output","sha":"c53e66d"}}
+{"ts":"2026-11-22T09:18:56+09:00","level":"INFO","action":"send_email","detail":{"recipient":"<redacted>","status":"sent","subject_date":"2026-11-22"}}
+{"ts":"2026-11-22T09:18:56+09:00","level":"INFO","action":"routine_end","detail":{"duration_seconds":645,"status":"success","items_total":68,"errors_count":2,"email_sent":true}}
